@@ -1,0 +1,335 @@
+/* THEME OPTIONS ************************** */
+
+/* GLOBAL ********************************* */
+
+html {
+  font-family: 'sansationregular';
+}
+/* ----- Custom Fonts ---------------- */
+
+
+
+@font-face {
+  font-family: 'sansationbold';
+  src: url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-bold.eot');
+  src: url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-bold.eot?#iefix') format('embedded-opentype'),
+  url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-bold.woff') format('woff'),
+  url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-bold.ttf') format('truetype'),
+  url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-bold.svg#sansationbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sansationitalic';
+  src: url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-italic.eot');
+  src: url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-italic.eot?#iefix') format('embedded-opentype'),
+       url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-italic.woff') format('woff'),
+       url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-italic.ttf') format('truetype'),
+       url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-italic.svg#sansationitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+                                                                                              
+}
+@font-face {
+  font-family: 'sansationregular';
+  src: url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-regular.eot');
+  src: url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-regular.eot?#iefix') format('embedded-opentype'),
+       url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-regular.woff') format('woff'),
+       url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-regular.ttf') format('truetype'),
+       url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-regular.svg#sansationregular') format('svg');
+       font-weight: normal;
+       font-style: normal;
+
+}
+
+/* ----- Body ------------------------ */
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #D7D4CD;
+  background-image: url(../background.png);
+  background-repeat: repeat;
+}
+
+/* ----- Custom Fonts ---------------- */
+/* ----- Text ------------------------ */
+/* ----- Links ----------------------- */
+/* ----- Lists ----------------------- */
+/* ----- Tables ---------------------- */
+/* ----- Forms ----------------------- */
+
+/* HEADER ********************************* */
+/* ----- Header Region --------------- */
+/* ----- Search Box ------------------ */
+/* ----- Logo ------------------------ */
+#iin-logo {
+  padding: 15px;
+
+}
+/* ----- Site Title and Slogan ------- */
+
+/* ----- Short term order for new hacks ------- */
+h1 {
+font-family: 'sansationregular';
+font-size: 1.9em;
+text-transform: uppercase;
+}
+
+h2 {
+font-family: 'sansationregular';
+font-size: 1.6em;
+text-transform: uppercase;
+}
+
+h3 {
+font-family: 'sansationregular';
+font-size:1.2em;
+}
+
+h4 {
+font-family: 'sansationbold';
+font-size:1.4em;
+}
+
+
+
+p {
+font-family: Helvetica, Arial, sans-serif;;
+font-weight: normal;
+font-size: 0.875em;
+}
+
+p2 {
+font-family: Helvetica, Arial, sans-serif;;
+font-weight: normal;
+font-size: 0.75em;
+}
+
+.orange {
+	color:#f49200;
+}
+
+
+/* ----- Join The Conversation --- */
+
+.conversationtitlediv {
+  	width:100%;
+	height:60px;
+	border-bottom:#e3e3e2 thin solid;
+	background-image: url(../images/conversationicon.jpg);  
+	background-repeat: no-repeat;
+	background-position: 18px 0px;
+	font-family: 'sansationregular';
+	font-size: 1.2em;
+	text-transform: uppercase;
+	color:#f49200;
+	padding-top: 15px;
+}
+
+/* NAVIGATION ***************************** */
+.iin-nav ul.nav {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.iin-nav ul.nav li  {
+  
+  background-image:url(../nav_arrow.png);
+  background-repeat: no-repeat;
+  background-position: 0 .4em;
+  padding-left: 2.6em;
+  font-size: 1em;
+  padding-top:10px;
+  padding-bottom: 10px;
+  border-top-style: dotted;
+  border-width: 1px;
+  border-color: #DADAD9;
+
+}
+.iin-nav ul li a {
+  color: gray;
+
+}
+.iin-nav ul.nav li a:active {
+  color: #FFFFFF;
+  background-color: orange;
+}
+.iin-nav ul.about {
+
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+.iin-nav ul.about li {
+
+
+  background-image:url(../honeycomb_nav.png);
+  background-repeat: no-repeat;
+  background-position: 0 1em;
+  padding-left: 2.6em;
+  border-style: none; 
+}
+/* ----- Main Navigation ------------- */
+/* ----- Secondary Navigation -------- */
+/* ----- Breadcrumbs ----------------- */
+/* ----- First Sidebar Menu Blocks --- */
+/* ----- Second Sidebar Menu Blocks -- */
+/* ----- Admin Menu ------------------ */
+/* ----- Pager Nav ------------------- */
+
+/* SIDEBARS ******************************* */
+
+/* FOOTER ********************************* */
+/* ----- Fat Footer ------------------ */
+
+/* CONTENT ******************************** */
+
+/* VIEWS ********************************** */
+.iin-join-conversation-block {
+  background-color: #FFF; 
+  margin-top: 0%;
+}
+.iin-join-conversation-block h2 {
+  color: orange;
+  text-align: center;
+
+}
+.iin-profile-block {
+  background-color: #FFF;
+  padding: 10px;
+}
+#iin-profile-name {
+  padding-bottom: 10px
+}
+#iin-profile-links {
+  float: right;
+  padding: 30px;
+}
+#iin-profile-links ul.profile-block {
+  list-style-type: none;
+}
+#iin-profile-links ul.profile-block li {
+  padding: 5px;
+}
+#iin-profile-picture {
+}
+.iin-feature {
+  background-color: #FFF;
+}
+.iin-feature h2 {
+  margin: 0px;
+  background-color: #f49200;
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 5px;
+padding-bottom: 5px;
+font-weight: normal;
+margin-bottom:15px;
+}
+.iin-sc-discussion {
+  background-color: #FFF;
+}
+.iin-sc-discussion p {
+  padding: 1em;
+}
+.iin-sc-discussion h2 {
+  margin: 0px;
+  background-color: orange;
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+}
+.iin-sc-resources {
+  background-color: #FFF;
+}
+.iin-sc-resources p {
+  padding: 1em;
+}
+.iin-sc-resources h2 {
+  margin: 0px;
+  background-color: orange;
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+}
+.iin-feature .views-field-field-organisation-image {
+  float: left;
+}
+.iin-feature .view-organizations .views-field-title {
+  padding: 30px;
+
+}
+.view-join-the-coversation .views-field {
+  background-color: #FFF;
+  padding: 0 20px 20px;
+  margin-bottom: 20px;
+
+}
+.iin-feature .view-organizations ul{
+  list-style-type: none;
+}
+.iin-user-profile {
+  background-color: #FFF;
+  padding: 20px;
+
+}
+.iin-user-profile #user-picture {
+  float:left;
+  padding-top: 25px;
+}
+.profile2-iin-kickstarter {
+  padding-left: 130px;
+}
+.profile2-iin-kickstarter .field {
+  padding: 10px;
+}
+#kickstarter-profile h3 {
+  display: none
+}
+.iin-slideshow .views-field-body {
+  background-color: orange;
+  color: #FFF;
+  padding: 10px;
+}
+.iin-slideshow .views-field-title {
+  background-color: orange;
+  color: #FFF;
+  padding: 10px;
+}
+/* ----- Search Results -------------- */
+
+/* CONTAINERS ***************************** */
+/* ----- Blocks ---------------------- */
+/* ----- Wells ----------------------- */
+/* ----- Callouts and Blockquotes ---- */
+/* ----- Pullquote Text -------------- */
+
+/* POSTCARD LAYOUTS ********************** */
+
+/* IMAGES ******************************** */
+
+/* ICONS ********************************* */
+
+/* HELPER CLASSES ************************ */
+/* ----- Style ----------------------- */
+/* ----- Positioning ----------------- */
+/* ----- Sizing ---------------------- */
+
+/* GENERAL OVERRIDES ********************* */
+/* ----- Bootstrap Overrides --------- */
+/* ----- Field Collection Overrides -- */
+/* ----- Field Label Overrides ------- */
+
+/* ADMINISTRATION ************************ */
+/* ----- Admin ----------------------- */
+/* ----- User Block ------------------ */
+
+/* MEDIA QUERIES ************************* */
+/* ----- Responsive ------------------ */
+/* ----- Print ----------------------- */
