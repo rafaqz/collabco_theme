@@ -7,19 +7,7 @@ files/
 sites/*/files
 sites/*/private
 
-# Ignore default text files
 .htaccess
-robots.txt
-/CHANGELOG.txt
-/COPYRIGHT.txt
-/INSTALL*.txt
-/LICENSE.txt
-/MAINTAINERS.txt
-/UPGRADE.txt
-/README.txt
-all/README.txt
-all/modules/README.txt
-all/themes/README.txt
 
 # Mac folder file
 .DS_Store
