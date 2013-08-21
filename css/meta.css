@@ -1,32 +1,27 @@
 
 
-
-
-
 /**
 
-META Stylesheet
+META Stylesheet - Please only change fonts, meta-specific fonts sizes, images and background colors using this file
 
 
-  0. BODY & BLOCK COLOR & BACKGROUND CHANGES
-  1. FONTS
-  2. LOGO, ICONS
-  3. PAGE HEADERS
+  1. BODY & BLOCK COLOR & BACKGROUND CHANGES
+  2. FONTS & HEADERS
+  3. LOGO, ICONS
   4. THREADED COMMENTS
-  5. Fixes for THREADED COMMENTS
-  6. LOGIN PAGE
-  7. JOIN THE CONVERSATION
-  8. Welcome page
-  9. PARTNERS
+  5. LOGIN PAGE
+  6. JOIN THE CONVERSATION
+  7. WELCOME PAGE
+  8. PARTNERS
   ---------------------------------------------
+
 */
 
 
 
 
-
 /*****************************
-0. BODY & BLOCK COLOR & BACKGROUND CHANGES
+1. BODY & BLOCK COLOR & BACKGROUND CHANGES
 
 
  Orange: #ed6a26
@@ -72,7 +67,7 @@ body {
 
 
 /**
-  1. FONTS
+ 2. FONTS & HEADERS
   ---------------------------------------------
 */
 
@@ -148,8 +143,9 @@ h5 {
 }
 
 
+
 /**
-2.  LOGO, ICONS
+3.  LOGO, ICONS
   ---------------------------------------------
 **/
 
@@ -165,37 +161,6 @@ h5 {
 	background: url(../images/commentbubble.png) no-repeat top;
 }
 
-.commentbubble p {
-	margin-right: 8px;
-}
-
-.view-recent-activity .activity-details {
-	margin-left: 5px;
-	float: none;
-	padding-left: 55px;
-	width: 100%;
-}
-.view-recent-activity .activity-details > p {
-	margin-bottom: 0px;
-}
-.view-recent-activity .activity-details > em {
-	font-size: 12px;
-}
-
-
-/**
- 3. PAGE HEADERS
-  ---------------------------------------------
-**/
-
-.page-join-the-conversation {
-
-}
-
-.page-join-the-conversation .citon {
-
-}
-
 
 
 
@@ -205,276 +170,77 @@ h5 {
 **/
 #comments .comment{
  background:#F3F3F3;
- margin:0 0px 15px 0px;
- padding:12px;
 }
 
-#comments .user-picture{
- float:left;
- width:55px;
- height:55px;
- padding:10px 0 0 10px;
-}
 
 #comments .comment .field-name-comment-body{
  font-family: Helvetica, Arial, sans-serif;
- font-weight: normal;
- font-size: 12px;
  color: #767676;
- line-height: 1.5;
 }
 
 #comments h3{
  font-family: 'Frutiger Roman', sans-serif;
- font-size: 1.2em;
- line-height: 1.5;
- display:block;
- padding-bottom:6px;
- padding-left: 74px;
- background: white;
- margin-top: 0px;
- margin-bottom:0px;
- padding-top:4px;
 }
 
 #comments .submitted{
  font-family: 'Frutiger Roman', sans-serif;
- font-weight: normal;
- font-size: 0.875em;
- line-height: 1.5;
- font-weight: bold;
- font-style: italic;
- padding-left: 74px;
- background: white;
- margin-bottom:0px;
- padding-right:28px;
 }
 
-#comments .content{
- background: white;
- margin:0px;
- padding:12px;
-}
-
-#comments .field-name-comment-body{
- margin-bottom:0px;
-}
-
-#comments .links{
- margin:10px 10px 0px 0px;
- display:block;
-}
-
-/** 
-  5. Fixes for THREADED COMMENTS
-*/
-
-#comments .comment a.permalink {
-	display: none;
-}
-#comments .comment .content {
-	clear: both;
-}
-#comments .comment .field-name-comment-body {
-	padding-left: 0px;
-}
-#comments .comment .submitted {
-	height: 55px;
-}
-#comments .comment .submitted span a {
-	display: block;
-}
-
-.discussioncomment .commentquote {
-	float: none;
-	width: 100%;
-	clear: both;
-	padding-top: 5px;
-}
 
 
 /**
-  6. LOGIN PAGE
+  5. LOGIN PAGE
   ---------------------------------------------
 **/
-.not-logged-in.page-user-register .container,
-.not-logged-in.page-user .container,
-.not-logged-in.page-user-password .container {
-	max-width: 600px;
-	margin: 0 auto;
-}
 
 .not-logged-in.page-user-register #content #content-head,
 .not-logged-in.page-user #content #content-head,
 .not-logged-in.page-user-password #content #content-head {
-	margin-top: 10px;
 	background-image: url('/sites/members.meta.org.au/themes/openhub/meta-logo.png');
-	background-repeat: no-repeat;
-	background-position: center top;
-	padding-top: 100px;
-}
-
-.not-logged-in.page-user-register #content #content-head .title,
-.not-logged-in.page-user #content #content-head .title,
-.not-logged-in.page-user-password #content #content-head .title {
-	display: none;
-}
-
-.not-logged-in.page-user-register #content.mc-content,
-.not-logged-in.page-user #content.mc-content,
-.not-logged-in.page-user-password #content.mc-content {
-	width: 100%;
-	margin: 0 auto;
-	float: none;
 }
 
 
 .not-logged-in #content #content-head #page-title {
 	color: #6a6767;
-	text-align: center;
-	margin: 0 auto;
-	margin-top: 10px;
-	background-position: center top;
 }
 
-.not-logged-in #content #content-head .tabs .nav-tabs  {
-	border: none;
-	margin-top: 20px;
-	margin-bottom: 0px;
-}
 
-.not-logged-in #content #content-head .tabs .nav-tabs > li {
-	display: inline-block;
-	float: none;
-}
 
 .not-logged-in #content #content-head .tabs .nav-tabs > li > a {
-	padding: 0 0 5px 0 !important;
-	margin: 10px;
-	width: 120px;
 	color: #ed6a26;
 	font-family: 'PT Sans Narrow', sans-serif;
-	font-size: 21px;
-	font-weight: bold;
-	padding: 0;
-	border: 0;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0;
 }
 
 
 .not-logged-in #content #content-head .tabs .nav-tabs > li > a.active {
 	color: #6a6767;
-	background-color: inherit;
 	border-bottom: 3px solid #6a6767;
 }
 
 
 /**
-  7. JOIN THE CONVERSATION
+  6. JOIN THE CONVERSATION
   ---------------------------------------------
 **/
-.page-conversations #block-system-main {
-	padding-top: 0px;
+
+.discussionpreview {
+	background-color: #F3F3F3;
 }
 
-.page-conversations .discussioncomment {
-	margin-bottom: 10px;
-}
-.page-conversations #block-block-10 {
-	padding: 8px 0;
-	margin: 0;
-}
-.page-conversations #block-block-10 p {
-	margin: 0px;
+.conversationtitlediv {
+	color:#f49200;
 }
 
-.view-conversation-titles .views-row {
-	margin-bottom: 0;
-	border-bottom: none;
-	padding-bottom: 0;
-}
-
-.view-join-the-coversation #content-top .content p {
-	margin: 8px 0;
-}
-
-.view-join-the-coversation .current-conversation-title {
-
-}
-
-.view-join-the-coversation .discussionpreview .discussioncomment div {
-	min-height: 0px;
-}
-
-.view-join-the-coversation .views-field {
-	padding: 0;
-}
-
-.comment-bubble 
-{
-	position: relative;
-	width: 220px;
-	min-height:50px;
-	padding: 10px;
-	background: #f4f4f4;
-	border: #D0D0D0 solid 1px;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-}
-
-.comment-bubble:before 
-{
-	content: "";
-	position: absolute;
-	top: -30px;
-	left: 16px;
-	border-style: solid;
-	border-width: 0 7px 29px;
-	border-color: #D0D0D0 transparent;
-	display: block;
-	width: 0;
-	z-index: 0;
-}
-.comment-bubble:after 
-{
-	content: "";
-	position: absolute;
-	top: -28px;
-	left: 16px;
-	border-style: solid;
-	border-width: 0 7px 29px;
-	border-color: #f4f4f4 transparent;
-	display: block;
-	width: 0;
-	z-index: 1;
-}
 
 /**
-  8. Welcome page
+  7. WELCOME PAGE
   ---------------------------------------------
 **/
-
-.node-type-discussion .userpicture {
-	float: left;
-	margin: 0px 10px 10px 0;
-}
-
-.node-type-discussion .submitted .submitted-content-posted {
-	font-style: italic;
-}
 
 .node-type-discussion .node-discussion .links .comment-add a.active {
 	color: #0088cc;
 }
 
-/**
-  9. PARTNERS
-  ---------------------------------------------
-**/
-.page-node #main-content #content-body {
-	margin-bottom: 10px;
-}
+
+
 

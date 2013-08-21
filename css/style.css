@@ -210,14 +210,88 @@ padding-bottom: 10px;
 
 /* ----- Join The Conversation --- */
 
+.page-conversations #block-system-main {
+  padding-top: 0px;
+}
+
+.page-conversations .discussioncomment {
+  margin-bottom: 10px;
+}
+.page-conversations #block-block-10 {
+  padding: 8px 0;
+  margin: 0;
+}
+.page-conversations #block-block-10 p {
+  margin: 0px;
+}
+
+.view-conversation-titles .views-row {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.view-join-the-coversation #content-top .content p {
+  margin: 8px 0;
+}
+
+.view-join-the-coversation .current-conversation-title {
+
+}
+
+.view-join-the-coversation .discussionpreview .discussioncomment div {
+  min-height: 0px;
+}
+
+.view-join-the-coversation .views-field {
+  padding: 0;
+}
+
+.comment-bubble 
+{
+  position: relative;
+  width: 220px;
+  min-height:50px;
+  padding: 10px;
+  background: #f4f4f4;
+  border: #D0D0D0 solid 1px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.comment-bubble:before 
+{
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 16px;
+  border-style: solid;
+  border-width: 0 7px 29px;
+  border-color: #D0D0D0 transparent;
+  display: block;
+  width: 0;
+  z-index: 0;
+}
+.comment-bubble:after 
+{
+  content: "";
+  position: absolute;
+  top: -28px;
+  left: 16px;
+  border-style: solid;
+  border-width: 0 7px 29px;
+  border-color: #f4f4f4 transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+}
+
 .conversationtitlediv {
-  	width:100%;
+  width:100%;
 	height:60px;
-	border-bottom:#e3e3e2 thin solid;
-	font-family: 'sansationregular';
 	font-size: 1.2em;
 	text-transform: uppercase;
-	color:#f49200;
 	text-align:left;
 	vertical-align: middle;
 	line-height: 2.2;
@@ -230,16 +304,15 @@ padding-bottom: 10px;
 }*/
 
 .discussionpreview {
-	background-color: #F3F3F3;
     margin-left: -15px;
     padding: 10px 20px;
     width: 92%;
 }
 .discussioncomment {
 	background-color: #ffffff;
-    margin-left: -5px;
-    padding: 10px 10px 10px 10px;
-    width: 85%;
+  margin-left: -5px;
+  padding: 10px 10px 10px 10px;
+  width: 85%;
 	margin-top: 10px;
 }
 .commentquote {
@@ -261,6 +334,10 @@ padding-bottom: 10px;
 	position:relative;
 }
 
+.commentbubble p {
+  margin-right: 8px;
+}
+
 .bubble_border {
 	border-radius:10px;
 	border:#D0D0D0 thin solid;
@@ -271,6 +348,21 @@ padding-bottom: 10px;
 .top20 {
 	margin-top: 20px;
 }
+
+/* ----- recent activity --- */
+.view-recent-activity .activity-details {
+  margin-left: 5px;
+  float: none;
+  padding-left: 55px;
+  width: 100%;
+}
+.view-recent-activity .activity-details > p {
+  margin-bottom: 0px;
+}
+.view-recent-activity .activity-details > em {
+  font-size: 12px;
+}
+
 
 
 /* ----- search bar hack --- */
@@ -393,7 +485,100 @@ padding-bottom: 10px;
 
 /* CONTENT ******************************** */
 
+/**
+  8. Welcome page
+  ---------------------------------------------
+**/
+
+.node-type-discussion .userpicture {
+  float: left;
+  margin: 0px 10px 10px 0;
+}
+
+.node-type-discussion .submitted .submitted-content-posted {
+  font-style: italic;
+}
+
+
+
 /* VIEWS ********************************** */
+#block-block-11 .content {
+  padding: 0px !important;
+}
+
+.twocolgrid {
+  float: left;
+  width: 40%;
+  height: 120px;
+  padding-bottom: 5px;
+  border-bottom: #ccc thin solid;
+  margin-right: 25px;
+  margin-bottom: 30px;
+  vertical-align: baseline;
+  margin-left: 10px;
+}
+
+.view-member-organisations .views-row {
+  clear: both;
+  margin-bottom: 1em;
+  padding-bottom: 10px;
+  border-bottom: none;
+}
+
+.view-member-organisations ul li {
+  display:inline;
+}
+
+.view-member-organisations ul {
+  padding-bottom:10px;
+  margin-bottom:15px;
+  height: 80px;
+}
+
+.marginleft20 {
+  margin-left:20px;
+}
+
+.fieldset-title {
+  font-size:0.7em !important;
+}
+
+.field-collection-view {
+  margin-bottom: 20px;
+}
+
+#quicktabs-services .ui-widget-header {
+  padding: 0px;
+}
+
+#quicktabs-services .ui-state-default {
+  
+}
+
+#quicktabs-services li {
+  width:24%
+}
+
+.ui-tabs-nav li {
+  width: 24%;
+  margin-bottom: 5px;
+  height: 70px;
+  white-space:normal;
+}
+
+.ui-tabs-nav li a {
+float: left;
+padding: .5em 1em;
+text-decoration: none;
+white-space: normal;
+}
+
+#quicktabs-services {
+  margin-top:20px;
+  padding-bottom:20px;
+  margin-bottom:20px;
+}
+
 .iin-join-conversation-block {
     background-color: #FFFFFF;
 }
@@ -492,16 +677,7 @@ padding-bottom: 10px;
   overflow: none;
 }
 
-.page-user.not-logged-in .title {
-  background-image: url('http://metastage.holocene.cc/sites/members.meta.org.au/themes/openhub/meta-logo.png');
-  background-repeat: no-repeat;
-  background-position: left top;
-  padding-top: 100px;
-}
 
-.comment span.new {
-  display: none;
-}
 
 .page-node-207 #block-system-main, 
 .front #block-system-main { 
@@ -510,6 +686,184 @@ padding-bottom: 10px;
 
 #block-views-all-users-block {
   padding-top: 15px;
+}
+
+/**
+  9. PARTNERS
+  ---------------------------------------------
+**/
+.page-node #main-content #content-body {
+  margin-bottom: 10px;
+}
+
+/**
+  4. THREADED COMMENTS
+  ---------------------------------------------
+**/
+
+.comment span.new {
+  display: none;
+}
+
+#comments .comment{
+ margin:0 0px 15px 0px;
+ padding:12px;
+}
+
+#comments .user-picture{
+ float:left;
+ width:55px;
+ height:55px;
+ padding:10px 0 0 10px;
+}
+
+#comments .comment .field-name-comment-body{
+ font-weight: normal;
+ font-size: 12px;
+ line-height: 1.5;
+}
+
+#comments h3{
+ font-size: 1.2em;
+ line-height: 1.5;
+ display:block;
+ padding-bottom:6px;
+ padding-left: 74px;
+ background: white;
+ margin-top: 0px;
+ margin-bottom:0px;
+ padding-top:4px;
+}
+
+#comments .submitted{
+ font-weight: normal;
+ font-size: 0.875em;
+ line-height: 1.5;
+ font-weight: bold;
+ font-style: italic;
+ padding-left: 74px;
+ background: white;
+ margin-bottom:0px;
+ padding-right:28px;
+}
+
+#comments .content{
+ background: white;
+ margin:0px;
+ padding:12px;
+}
+
+#comments .field-name-comment-body{
+ margin-bottom:0px;
+}
+
+#comments .links{
+ margin:10px 10px 0px 0px;
+ display:block;
+}
+
+/** 
+  5. Fixes for THREADED COMMENTS
+*/
+
+#comments .comment a.permalink {
+  display: none;
+}
+#comments .comment .content {
+  clear: both;
+}
+#comments .comment .field-name-comment-body {
+  padding-left: 0px;
+}
+#comments .comment .submitted {
+  height: 55px;
+}
+#comments .comment .submitted span a {
+  display: block;
+}
+
+.discussioncomment .commentquote {
+  float: none;
+  width: 100%;
+  clear: both;
+  padding-top: 5px;
+}
+/**
+  6. LOGIN PAGE
+  ---------------------------------------------
+**/
+.not-logged-in.page-user-register .container,
+.not-logged-in.page-user .container,
+.not-logged-in.page-user-password .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.not-logged-in.page-user-register #content #content-head,
+.not-logged-in.page-user #content #content-head,
+.not-logged-in.page-user-password #content #content-head {
+  margin-top: 10px;
+  background-image: url('/sites/members.meta.org.au/themes/openhub/meta-logo.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 100px;
+}
+
+.not-logged-in.page-user-register #content #content-head .title,
+.not-logged-in.page-user #content #content-head .title,
+.not-logged-in.page-user-password #content #content-head .title {
+  display: none;
+}
+
+.not-logged-in.page-user-register #content.mc-content,
+.not-logged-in.page-user #content.mc-content,
+.not-logged-in.page-user-password #content.mc-content {
+  width: 100%;
+  margin: 0 auto;
+  float: none;
+}
+
+
+.not-logged-in #content #content-head #page-title {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-position: center top;
+}
+
+.not-logged-in #content #content-head .tabs .nav-tabs  {
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.not-logged-in #content #content-head .tabs .nav-tabs > li {
+  display: inline-block;
+  float: none;
+}
+
+.not-logged-in #content #content-head .tabs .nav-tabs > li > a {
+  padding: 0 0 5px 0 !important;
+  margin: 10px;
+  width: 120px;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 0;
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+
+.not-logged-in #content #content-head .tabs .nav-tabs > li > a.active {
+  background-color: inherit;
+}
+
+.page-user.not-logged-in .title {
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-top: 100px;
 }
 
 /* ----- Search Results -------------- */
