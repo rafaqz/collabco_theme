@@ -13,7 +13,6 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
-  background-repeat: repeat;
   line-height: 20px;
 }
 
@@ -262,13 +261,19 @@ line-height: 1.5;
   margin-right: 8px;
 }
 
-.bubble_border {
-	border-radius:10px;
-	padding: 15px;
-}
-
 .top20 {
 	margin-top: 20px;
+}
+
+.commentbubble {
+  background: url(../images/bubbletop.png) no-repeat top !important;
+}
+
+.bubble_border {
+  border-radius:10px;
+  border:#D0D0D0 thin solid;
+  background: #f4f4f4;
+  padding: 15px;
 }
 
 /* ----- recent activity --- */
@@ -290,6 +295,7 @@ line-height: 1.5;
 /* ----- search bar hack --- */
 
 .form-actions {
+    background-color: transparent;
     border-top: 0;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -335,7 +341,6 @@ line-height: 1.5;
   border-top-style: dotted;
   border-width: 1px;
 }
-
 
 .iin-nav ul.about {
   list-style-type: none;

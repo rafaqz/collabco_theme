@@ -12,7 +12,10 @@ META Stylesheet - Please only change fonts, meta-specific fonts sizes, images an
   5. LOGIN PAGE
   6. JOIN THE CONVERSATION
   7. WELCOME PAGE
-  8. PARTNERS
+  8. NAVIGATION 
+  9. PROFILES 
+  10. FEATURED CONTENT BLOCK 
+  11. SC RESOURCES BLOCK
   ---------------------------------------------
 
 */
@@ -35,32 +38,10 @@ body {
 }
 
 /* Orange Sections */
-#block-views-slideshow-block {
-  background-color: #ed6a26;
-}
 
-#page-title {
-  color: #ed6a26;
-}
 
 .orange {
 	color:#ed6a26;
-}
-
-.conversationtitlediv {
- 	color:#ed6a26;
-}
-
-#iin-profile-title {
- 	background-color: #ed6a26;
-}
-.iin-feature h2 {
-  background-color: #ed6a26;
-}
-
-
-#block-block-11 .content {
-	background: #f2f2f2 !important;
 }
 
 
@@ -157,9 +138,6 @@ h5 {
 /*	background-image: url(../images/conversation.png); max-width:100%;  */
 }
 
-.commentbubble {
-	background: url(../images/commentbubble.png) no-repeat top;
-}
 
 
 
@@ -231,6 +209,10 @@ h5 {
 	color:#f49200;
 }
 
+.conversationtitlediv {
+ 	color:#ed6a26;
+}
+
 
 /**
   7. WELCOME PAGE
@@ -250,8 +232,94 @@ h5 {
   background-color: #fff;
 }
 
+.iin-slideshow .views-field-nothing {
+  color: #fff;
+}
+
+#block-views-slideshow-block {
+  background-color: #ed6a26;
+}
+
+#page-title {
+  color: #ed6a26;
+}
+
+
+/** 
+8. NAVIGATION 
+---------------------------------------------
+**/
+
+.iin-nav ul.nav li  {
+  background-image:url(../nav_arrow.png);
+  border-color: #DADAD9;
+}
+
+.iin-nav ul li a {
+  color: gray;
+}
+
+.iin-nav ul.nav li a:active {
+  color: #FFFFFF;
+  background-color: orange;
+}
+
+
+.iin-nav ul.about li {
+  background-image:url(../honeycomb_nav.png);
+}
+
+
+/** 9. PROFILES 
+---------------------------------------------
+**/
+
+.iin-profile-block {
+  background-color: #FFF;
+}
+
+#iin-profile-title {
+ 	background-color: #F49200;
+    color: #FFFFFF;
+}
+
+.iin-user-profile {
+  background-color: #FFF;
+}
+
+
+/** 10. FEATURED CONTENT BLOCK 
+---------------------------------------------
+**/
+
+.iin-feature {
+  background-color: #FFF;
+}
+
+.iin-feature h2 {
+  background-color: #f49200;
+  color: #FFF;
+}
+
+
+#block-block-11 .content {
+	background: #f2f2f2 !important;
+}
 
 
 
+/** 11. SC RESOURCES BLOCK 
+---------------------------------------------
+**/
+
+.iin-sc-resources {
+  background-color: #FFF;
+}
+
+
+.iin-sc-resources h2 {
+  background-color: orange;
+  color: #FFF;
+}
 
 
