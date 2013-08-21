@@ -1,13 +1,34 @@
-/* THEME OPTIONS ************************** */
+/*
 
-/* GLOBAL ********************************* */
-
-
-/* ----- Custom Fonts ---------------- */
+GLOBAL Stylesheet - Please DO NOT add theme-specific fonts sizes, images and background colors using this file
 
 
+  1. BODY & BACKGROUND
+  2. FONTS & HEADERS
+  3. NAVIGATION
+  4. WELCOME PAGE
+  5. RECENT ACTIVITY BLOCK
+  6. SEARCH BAR HACK
+  7. THREADED COMMENTS
+    7a. Fixes for THREADED COMMENTS
+  8. JOIN THE CONVERSATION BLOCK & DISCUSSION PAGES
+  9. PROFILES 
+  10. MEMBER ORGANISATION PROFILES 
+  11. FEATURED CONTENT BLOCK
+  12. SC RESOURCES BLOCK
+  13. PARTNERS
+  14. LOGIN PAGE
 
-/* ----- Body ------------------------ */
+  ---------------------------------------------
+
+*/
+
+
+
+/**
+1. BODY & BACKGROUND
+  ---------------------------------------------
+*/
 
 body {
   font-family: Helvetica, Arial, sans-serif;
@@ -16,21 +37,29 @@ body {
   line-height: 20px;
 }
 
-/* ----- Custom Fonts ---------------- */
-/* ----- Text ------------------------ */
-/* ----- Links ----------------------- */
-/* ----- Lists ----------------------- */
-/* ----- Tables ---------------------- */
-/* ----- Forms ----------------------- */
+.divider {
+  height: 2px;
+  margin-top:-10px;
+  margin-bottom:10px;
+}
 
-/* HEADER ********************************* */
-/* ----- Header Region --------------- */
-/* ----- Search Box ------------------ */
-/* ----- Logo ------------------------ */
 
-/* ----- Site Title and Slogan ------- */
+.views-row {
+    clear: both;
+    margin-bottom: 1em;
+    padding-bottom: 10px;
+}
 
-/* ----- Short term order for new hacks ------- */
+.twocolgrid {
+  float: left;
+  width: 40%;
+  height: 120px;
+  padding-bottom: 5px;
+  margin-right: 25px;
+  margin-bottom: 30px;
+  vertical-align: baseline;
+  margin-left: 10px;
+}
 
 
 .block .content {
@@ -38,23 +67,12 @@ body {
 	padding-right:10px;
 }
 
-#block-views-slideshow-block .content {
-	padding: 0px;
-}
 
-#block-block-8 .content {
-	padding: 0px;
-	margin-top: -8px;
-}
 
-.iin-slideshow .views-field-nothing {
-  padding: 0 10px;
-  height: 80px
-}
-
-#page-title {
-  line-height:1;
-}
+/**
+ 2. FONTS & HEADERS
+  ---------------------------------------------
+*/
 
 h1 {
 font-family: Helvetica, Arial, sans-serif;
@@ -117,59 +135,159 @@ line-height: 1.5;
 }
 
 
-.divider {
-	height: 2px;
-	margin-top:-10px;
-	margin-bottom:10px;
-}
-
-
-.views-row {
-    clear: both;
-    margin-bottom: 1em;
-    padding-bottom: 10px;
-}
-
-
-/* ----- Join The Conversation --- */
-
-.page-conversations #block-system-main {
-  padding-top: 0px;
-}
-
-.page-conversations .discussioncomment {
-  margin-bottom: 10px;
-}
-.page-conversations #block-block-10 {
-  padding: 8px 0;
-  margin: 0;
-}
-.page-conversations #block-block-10 p {
+/** 
+3. NAVIGATION 
+---------------------------------------------
+**/
+.iin-nav ul.nav {
+  list-style-type: none;
+  padding: 0px;
   margin: 0px;
 }
 
-.view-conversation-titles .views-row {
-  margin-bottom: 0;
-  border-bottom: none;
-  padding-bottom: 0;
+.iin-nav ul.nav li  {
+  background-repeat: no-repeat;
+  background-position: 0 .4em;
+  padding-left: 2.6em;
+  font-size: 1.2em;
+  padding-top:10px;
+  padding-bottom: 10px;
+  border-top-style: dotted;
+  border-width: 1px;
 }
 
-.view-join-the-coversation #content-top .content p {
-  margin: 8px 0;
+.iin-nav ul.about {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
 }
 
-.view-join-the-coversation .current-conversation-title {
-
+.iin-nav ul.about li {
+  background-repeat: no-repeat;
+  background-position: 0 1em;
+  padding-left: 2.6em;
+  border-style: none; 
 }
 
-.view-join-the-coversation .discussionpreview .discussioncomment div {
-  min-height: 0px;
+
+/**
+  4. WELCOME PAGE
+  ---------------------------------------------
+**/
+
+.main .block {
+  border: thin solid #DFDFDF;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  background-color: #fff;
 }
 
-.view-join-the-coversation .views-field {
-  padding: 0;
+#block-views-slideshow-block .content {
+  padding: 0px;
 }
 
+#block-block-8 .content {
+  padding: 0px;
+  margin-top: -8px;
+}
+
+.iin-slideshow .views-field-nothing {
+  padding: 0 10px;
+  height: 80px
+}
+
+#page-title {
+  line-height:1;
+}
+
+
+/**
+  5. RECENT ACTIVITY BLOCK
+  ---------------------------------------------
+*/
+.view-recent-activity .activity-details {
+  margin-left: 5px;
+  float: none;
+  padding-left: 55px;
+  width: 100%;
+}
+.view-recent-activity .activity-details > p {
+  margin-bottom: 0px;
+}
+.view-recent-activity .activity-details > em {
+  font-size: 12px;
+}
+
+.commentbubble {
+  height: 20px;
+  width:20px;
+  margin: -12px 0 -7px 30px;
+  z-index:99;
+  position:relative;
+}
+
+.commentbubble p {
+  margin-right: 8px;
+}
+
+.top20 {
+  margin-top: 20px;
+}
+
+.commentbubble {
+  background: url(../images/bubbletop.png) no-repeat top !important;
+}
+
+.bubble_border {
+  border-radius:10px;
+  border:#D0D0D0 thin solid;
+  background: #f4f4f4;
+  padding: 15px;
+}
+
+
+/**
+  6. SEARCH BAR HACK
+  ---------------------------------------------
+*/
+
+.form-actions {
+    background-color: transparent;
+    border-top: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 19px 20px 20px;
+}
+
+#block-search-form .block {
+  border: 0 !important;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+#block-search-form {
+  height: 34px;
+}
+
+.nobordershadow {
+  border: 0 !important;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.nobackground {
+  background: none !important;
+}
+
+
+/**
+  7. THREADED COMMENTS
+  ---------------------------------------------
+*/
 .comment-bubble 
 {
   position: relative;
@@ -207,410 +325,22 @@ line-height: 1.5;
   z-index: 1;
 }
 
-.conversationtitlediv {
-  width:100%;
-	height:60px;
-	font-size: 1.2em;
-	text-transform: uppercase;
-	text-align:left;
-	vertical-align: middle;
-	line-height: 2.2;
-}
-
-/*.cicon {
-	background-image: url(../images/conversationtitleicon.png); max-width:100%;  
-	background-repeat: no-repeat;
-	background-position: 0px -4px;
-	height:62px;	
-}*/
-
-.discussionpreview {
-    margin-left: -15px;
-    padding: 10px 20px;
-    width: 92%;
-}
-
 .discussioncomment {
-	background-color: #ffffff;
+  background-color: #ffffff;
   margin-left: -5px;
   padding: 10px 10px 10px 10px;
   width: 85%;
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 .commentquote {
-	margin-left: -5px;
+  margin-left: -5px;
 }
 
 .commentname {
-	padding-right: 5px;
-	margin-right: -5px;
+  padding-right: 5px;
+  margin-right: -5px;
 }
-
-/* ----- convo sidebar --- */
-
-.commentbubble {
-  height: 20px;
-	width:20px;
-	margin: -12px 0 -7px 30px;
-	z-index:99;
-	position:relative;
-}
-
-.commentbubble p {
-  margin-right: 8px;
-}
-
-.top20 {
-	margin-top: 20px;
-}
-
-.commentbubble {
-  background: url(../images/bubbletop.png) no-repeat top !important;
-}
-
-.bubble_border {
-  border-radius:10px;
-  border:#D0D0D0 thin solid;
-  background: #f4f4f4;
-  padding: 15px;
-}
-
-/* ----- recent activity --- */
-.view-recent-activity .activity-details {
-  margin-left: 5px;
-  float: none;
-  padding-left: 55px;
-  width: 100%;
-}
-.view-recent-activity .activity-details > p {
-  margin-bottom: 0px;
-}
-.view-recent-activity .activity-details > em {
-  font-size: 12px;
-}
-
-
-
-/* ----- search bar hack --- */
-
-.form-actions {
-    background-color: transparent;
-    border-top: 0;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    padding: 19px 20px 20px;
-}
-
-#block-search-form .block {
-	border: 0 !important;
-	box-shadow: none !important;
-	-moz-box-shadow: none !important;
-	-webkit-box-shadow: none !important;
-}
-
-#block-search-form {
-  height: 34px;
-}
-
-.nobordershadow {
-	border: 0 !important;
-	box-shadow: none !important;
-	-moz-box-shadow: none !important;
-	-webkit-box-shadow: none !important;
-}
-
-.nobackground {
-  background: none !important;
-}
-
-/* NAVIGATION ***************************** */
-.iin-nav ul.nav {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-}
-
-.iin-nav ul.nav li  {
-  background-repeat: no-repeat;
-  background-position: 0 .4em;
-  padding-left: 2.6em;
-  font-size: 1.2em;
-  padding-top:10px;
-  padding-bottom: 10px;
-  border-top-style: dotted;
-  border-width: 1px;
-}
-
-.iin-nav ul.about {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-}
-
-.iin-nav ul.about li {
-  background-repeat: no-repeat;
-  background-position: 0 1em;
-  padding-left: 2.6em;
-  border-style: none; 
-}
-
-/* ----- Main Navigation ------------- */
-/* ----- Secondary Navigation -------- */
-/* ----- Breadcrumbs ----------------- */
-/* ----- First Sidebar Menu Blocks --- */
-/* ----- Second Sidebar Menu Blocks -- */
-/* ----- Admin Menu ------------------ */
-/* ----- Pager Nav ------------------- */
-
-/* SIDEBARS ******************************* */
-
-.iin-profile-block {
-  background-color: #FFF;
-  padding: 10px 0;
-}
-
-#iin-profile-title {
-    font-size: 1.3em;
-    font-weight: normal;
-    margin: -10px -10px 15px;
-    padding:  5px 10px;
-}
-#iin-profile-welcome {
-  display: inline;
-  font-style:italic;
-}
-#iin-profile-name {
-  display: inline;
-}
-#iin-profile-links {
-  float: right;
-}
-#iin-profile-links ul.profile-block {
-  list-style-type: none;
-}
-#iin-profile-picture {
-  padding: 0px;
-}
-
-/* FOOTER ********************************* */
-/* ----- Fat Footer ------------------ */
-
-/* CONTENT ******************************** */
-
-/**
-  8. Welcome page
-  ---------------------------------------------
-**/
-
-.node-type-discussion .userpicture {
-  float: left;
-  margin: 0px 10px 10px 0;
-}
-
-.node-type-discussion .submitted .submitted-content-posted {
-  font-style: italic;
-}
-
-
-
-/* VIEWS ********************************** */
-#block-block-11 .content {
-  padding: 0px !important;
-}
-
-.twocolgrid {
-  float: left;
-  width: 40%;
-  height: 120px;
-  padding-bottom: 5px;
-  margin-right: 25px;
-  margin-bottom: 30px;
-  vertical-align: baseline;
-  margin-left: 10px;
-}
-
-.view-member-organisations .views-row {
-  clear: both;
-  margin-bottom: 1em;
-  padding-bottom: 10px;
-  border-bottom: none;
-}
-
-.view-member-organisations ul li {
-  display:inline;
-}
-
-.view-member-organisations ul {
-  padding-bottom:10px;
-  margin-bottom:15px;
-  height: 80px;
-}
-
-.marginleft20 {
-  margin-left:20px;
-}
-
-.fieldset-title {
-  font-size:0.7em !important;
-}
-
-.field-collection-view {
-  margin-bottom: 20px;
-}
-
-#quicktabs-services .ui-widget-header {
-  padding: 0px;
-}
-
-#quicktabs-services .ui-state-default {
-  
-}
-
-#quicktabs-services li {
-  width:24%
-}
-
-.ui-tabs-nav li {
-  width: 24%;
-  margin-bottom: 5px;
-  height: 70px;
-  white-space:normal;
-}
-
-.ui-tabs-nav li a {
-float: left;
-padding: .5em 1em;
-text-decoration: none;
-white-space: normal;
-}
-
-#quicktabs-services {
-  margin-top:20px;
-  padding-bottom:20px;
-  margin-bottom:20px;
-}
-
-.iin-join-conversation-block {
-    background-color: #FFFFFF;
-}
-
-.iin-join-conversation-block h2 {
-	text-align: center;
-	width: 85%;
-	margin: auto;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	padding-bottom: 5px;
-}
-
-.iin-feature {
-  background-color: #FFF;
-}
-
-.iin-feature h2 {
-  margin: 0px;
-  font-size: 1.3em;
-  padding: 5px 10px;
-  font-weight: normal;
-  margin-bottom: 15px;
-}
-
-.iin-sc-discussion {
-  background-color: #FFF;
-}
-
-.iin-sc-discussion p {
-  padding: 1em;
-}
-
-.iin-sc-discussion h2 {
-  margin: 0px;
-  text-align: center;
-  font-size: 20px;
-}
-
-.iin-sc-resources {
-  background-color: #FFF;
-}
-
-.iin-sc-resources p {
-  padding: 1em;
-}
-.iin-sc-resources h2 {
-  margin: 0px;
-  text-align: center;
-  font-size: 20px;
-}
-.iin-feature .views-field-field-organisation-image {
-  float: left;
-}
-.iin-feature .view-organizations .views-field-title {
-  padding: 30px;
-
-}
-.view-join-the-coversation .views-field {
-  background-color: #FFF;
-  padding: 0 20px 20px;
-  margin-bottom: 20px;
-
-}
-.iin-feature .view-organizations ul{
-  list-style-type: none;
-}
-
-/* Profile */
-.iin-user-profile {
-  background-color: #FFF;
-  padding: 20px;
-}
-.iin-user-profile #user-picture {
-  float:left;
-  padding-top: 25px;
-}
-.profile2-iin-kickstarter {
-  padding-left: 130px;
-}
-.profile2-iin-kickstarter .field {
-  padding: 10px;
-}
-#kickstarter-profile h3 {
-  display: none
-}
-#block-system-main {
-  padding-top: 20px;
-}
-
-/*grids*/
-.custom-grid li {
-  margin: 0 !important;
-  height: 250px !important;
-  overflow: none;
-}
-
-
-
-.page-node-207 #block-system-main, 
-.front #block-system-main { 
-  display: none;
-}
-
-#block-views-all-users-block {
-  padding-top: 15px;
-}
-
-/**
-  9. PARTNERS
-  ---------------------------------------------
-**/
-.page-node #main-content #content-body {
-  margin-bottom: 10px;
-}
-
-/**
-  4. THREADED COMMENTS
-  ---------------------------------------------
-**/
 
 .comment span.new {
   display: none;
@@ -674,7 +404,7 @@ white-space: normal;
 }
 
 /** 
-  5. Fixes for THREADED COMMENTS
+  7a. Fixes for THREADED COMMENTS
 */
 
 #comments .comment a.permalink {
@@ -699,10 +429,317 @@ white-space: normal;
   clear: both;
   padding-top: 5px;
 }
+
+
 /**
-  6. LOGIN PAGE
+  8. JOIN THE CONVERSATION BLOCK & DISCUSSION PAGES
   ---------------------------------------------
-**/
+*/
+
+.page-conversations #block-system-main {
+  padding-top: 0px;
+}
+
+.page-conversations .discussioncomment {
+  margin-bottom: 10px;
+}
+.page-conversations #block-block-10 {
+  padding: 8px 0;
+  margin: 0;
+}
+.page-conversations #block-block-10 p {
+  margin: 0px;
+}
+
+.view-conversation-titles .views-row {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.view-join-the-coversation #content-top .content p {
+  margin: 8px 0;
+}
+
+.view-join-the-coversation .current-conversation-title {
+
+}
+
+.view-join-the-coversation .discussionpreview .discussioncomment div {
+  min-height: 0px;
+}
+
+.view-join-the-coversation .views-field {
+  padding: 0;
+}
+
+.conversationtitlediv {
+  width:100%;
+	height:60px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	text-align:left;
+	vertical-align: middle;
+	line-height: 2.2;
+}
+
+.iin-join-conversation-block {
+    background-color: #FFFFFF;
+}
+
+.iin-join-conversation-block h2 {
+  text-align: center;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+
+/*.cicon {
+	background-image: url(../images/conversationtitleicon.png); max-width:100%;  
+	background-repeat: no-repeat;
+	background-position: 0px -4px;
+	height:62px;	
+}*/
+
+.discussionpreview {
+    margin-left: -15px;
+    padding: 10px 20px;
+    width: 92%;
+}
+
+.node-type-discussion .submitted .submitted-content-posted {
+  font-style: italic;
+}
+
+.iin-sc-discussion {
+  background-color: #FFF;
+}
+
+.iin-sc-discussion p {
+  padding: 1em;
+}
+
+.iin-sc-discussion h2 {
+  margin: 0px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.view-join-the-coversation .views-field {
+  background-color: #FFF;
+  padding: 0 20px 20px;
+  margin-bottom: 20px;
+
+}
+
+
+/** 9. PROFILES 
+---------------------------------------------
+*/
+
+.iin-profile-block {
+  background-color: #FFF;
+  padding: 10px 0;
+}
+
+#iin-profile-title {
+    font-size: 1.3em;
+    font-weight: normal;
+    margin: -10px -10px 15px;
+    padding:  5px 10px;
+}
+#iin-profile-welcome {
+  display: inline;
+  font-style:italic;
+}
+#iin-profile-name {
+  display: inline;
+}
+#iin-profile-links {
+  float: right;
+}
+#iin-profile-links ul.profile-block {
+  list-style-type: none;
+}
+#iin-profile-picture {
+  padding: 0px;
+}
+
+.node-type-discussion .userpicture {
+  float: left;
+  margin: 0px 10px 10px 0;
+}
+
+.iin-user-profile {
+  background-color: #FFF;
+  padding: 20px;
+}
+.iin-user-profile #user-picture {
+  float:left;
+  padding-top: 25px;
+}
+.profile2-iin-kickstarter {
+  padding-left: 130px;
+}
+.profile2-iin-kickstarter .field {
+  padding: 10px;
+}
+#kickstarter-profile h3 {
+  display: none
+}
+#block-system-main {
+  padding-top: 20px;
+}
+
+/*grids*/
+.custom-grid li {
+  margin: 0 !important;
+  height: 250px !important;
+  overflow: none;
+}
+
+.page-node-207 #block-system-main, 
+.front #block-system-main { 
+  display: none;
+}
+
+#block-views-all-users-block {
+  padding-top: 15px;
+}
+
+
+/** 10. MEMBER ORGANISATION PROFILES 
+---------------------------------------------
+*/
+
+.view-member-organisations .views-row {
+  clear: both;
+  margin-bottom: 1em;
+  padding-bottom: 10px;
+  border-bottom: none;
+}
+
+.view-member-organisations ul li {
+  display:inline;
+}
+
+.view-member-organisations ul {
+  padding-bottom:10px;
+  margin-bottom:15px;
+  height: 80px;
+}
+
+.iin-feature .views-field-field-organisation-image {
+  float: left;
+}
+.iin-feature .view-organizations .views-field-title {
+  padding: 30px;
+
+}
+
+.marginleft20 {
+  margin-left:20px;
+}
+
+.fieldset-title {
+  font-size:0.7em !important;
+}
+
+.field-collection-view {
+  margin-bottom: 20px;
+}
+
+#quicktabs-services .ui-widget-header {
+  padding: 0px;
+}
+
+#quicktabs-services .ui-state-default {
+  
+}
+
+#quicktabs-services li {
+  width:24%
+}
+
+.ui-tabs-nav li {
+  width: 24%;
+  margin-bottom: 5px;
+  height: 70px;
+  white-space:normal;
+}
+
+.ui-tabs-nav li a {
+float: left;
+padding: .5em 1em;
+text-decoration: none;
+white-space: normal;
+}
+
+#quicktabs-services {
+  margin-top:20px;
+  padding-bottom:20px;
+  margin-bottom:20px;
+}
+
+
+/** 11. FEATURED CONTENT BLOCK 
+---------------------------------------------
+*/
+
+.iin-feature {
+  background-color: #FFF;
+}
+
+.iin-feature h2 {
+  margin: 0px;
+  font-size: 1.3em;
+  padding: 5px 10px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.iin-feature .view-organizations ul{
+  list-style-type: none;
+}
+
+#block-block-11 .content {
+  padding: 0px !important;
+}
+
+
+/** 12. SC RESOURCES BLOCK 
+---------------------------------------------
+*/
+
+.iin-sc-resources {
+  background-color: #FFF;
+}
+
+.iin-sc-resources p {
+  padding: 1em;
+}
+.iin-sc-resources h2 {
+  margin: 0px;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+/**
+  13. PARTNERS
+  ---------------------------------------------
+*/
+.page-node #main-content #content-body {
+  margin-bottom: 10px;
+}
+
+
+/**
+  14. LOGIN PAGE
+  ---------------------------------------------
+*/
 .not-logged-in.page-user-register .container,
 .not-logged-in.page-user .container,
 .not-logged-in.page-user-password .container {
@@ -732,7 +769,6 @@ white-space: normal;
   margin: 0 auto;
   float: none;
 }
-
 
 .not-logged-in #content #content-head #page-title {
   text-align: center;
@@ -765,7 +801,6 @@ white-space: normal;
   border-radius: 0;
 }
 
-
 .not-logged-in #content #content-head .tabs .nav-tabs > li > a.active {
   background-color: inherit;
 }
@@ -775,35 +810,3 @@ white-space: normal;
   background-position: left top;
   padding-top: 100px;
 }
-
-/* ----- Search Results -------------- */
-
-/* CONTAINERS ***************************** */
-/* ----- Blocks ---------------------- */
-/* ----- Wells ----------------------- */
-/* ----- Callouts and Blockquotes ---- */
-/* ----- Pullquote Text -------------- */
-
-/* POSTCARD LAYOUTS ********************** */
-
-/* IMAGES ******************************** */
-
-/* ICONS ********************************* */
-
-/* HELPER CLASSES ************************ */
-/* ----- Style ----------------------- */
-/* ----- Positioning ----------------- */
-/* ----- Sizing ---------------------- */
-
-/* GENERAL OVERRIDES ********************* */
-/* ----- Bootstrap Overrides --------- */
-/* ----- Field Collection Overrides -- */
-/* ----- Field Label Overrides ------- */
-
-/* ADMINISTRATION ************************ */
-/* ----- Admin ----------------------- */
-/* ----- User Block ------------------ */
-
-/* MEDIA QUERIES ************************* */
-/* ----- Responsive ------------------ */
-/* ----- Print ----------------------- */
