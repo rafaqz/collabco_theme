@@ -1,16 +1,38 @@
-/*
+
+
+
+
+
+/**
+
+META Stylesheet
+
+
+  0. BODY & BLOCK COLOR & BACKGROUND CHANGES
+  1. FONTS
+  2. LOGO, ICONS
+  3. PAGE HEADERS
+  4. THREADED COMMENTS
+  5. Fixes for THREADED COMMENTS
+  6. LOGIN PAGE
+  7. JOIN THE CONVERSATION
+  8. Welcome page
+  9. PARTNERS
+  ---------------------------------------------
+*/
+
+
+
+
+
+/*****************************
+0. BODY & BLOCK COLOR & BACKGROUND CHANGES
+
+
  Orange: #ed6a26
  Light Grey: #f2f2f2
- */
-@font-face { 
-    font-family: 'Frutiger Roman';
-    src:url("/sites/members.meta.org.au/themes/openhub/fonts/frutiger_roman/frutiger_roman.eot");
-    src:url("/sites/members.meta.org.au/themes/openhub/fonts/frutiger_roman/frutiger_roman.eot?#iefix") format('embedded-opentype'),
-        url("/sites/members.meta.org.au/themes/openhub/fonts/frutiger_roman/frutiger_roman.woff") format('woff'),
-        url("/sites/members.meta.org.au/themes/openhub/fonts/frutiger_roman/frutiger_roman.ttf") format('truetype');
-    font-weight:normal;
-    font-style:normal;
-}
+ *****************************/
+
 
 body {
 	background-color: #f2f2f2;
@@ -43,89 +65,26 @@ body {
 
 
 #block-block-11 .content {
-	padding: 0px !important;
 	background: #f2f2f2 !important;
 }
 
-.twocolgrid {
-	float: left;
-	width: 40%;
-	height: 120px;
-	padding-bottom: 5px;
-	border-bottom: #ccc thin solid;
-	margin-right: 25px;
-	margin-bottom: 30px;
-	vertical-align: baseline;
-	margin-left: 10px;
-}
-
-.view-member-organisations .views-row {
-	clear: both;
-	margin-bottom: 1em;
-	padding-bottom: 10px;
-	border-bottom: none;
-}
-
-.view-member-organisations ul li {
-	display:inline;
-}
-
-.view-member-organisations ul {
-	padding-bottom:10px;
-	margin-bottom:15px;
-	height: 80px;
-}
-
-.marginleft20 {
-	margin-left:20px;
-}
-
-.fieldset-title {
-	font-size:0.7em !important;
-}
-
-.field-collection-view {
-	margin-bottom: 20px;
-}
-
-#quicktabs-services .ui-widget-header {
-	padding: 0px;
-}
-
-#quicktabs-services .ui-state-default {
-	
-}
-
-#quicktabs-services li {
-	width:24%
-}
-
-.ui-tabs-nav li {
-	width: 24%;
-	margin-bottom: 5px;
-	height: 70px;
-	white-space:normal;
-}
-
-.ui-tabs-nav li a {
-float: left;
-padding: .5em 1em;
-text-decoration: none;
-white-space: normal;
-}
-
-#quicktabs-services {
-	margin-top:20px;
-	padding-bottom:20px;
-	margin-bottom:20px;
-}
 
 
 
 /**
-  Fonts
+  1. FONTS
   ---------------------------------------------
 */
+
+@font-face { 
+    font-family: 'Frutiger Roman';
+    src:url("/sites/members.meta.org.au/themes/openhub/fonts/frutiger_roman/frutiger_roman.eot");
+    src:url("/sites/members.meta.org.au/themes/openhub/fonts/frutiger_roman/frutiger_roman.eot?#iefix") format('embedded-opentype'),
+        url("/sites/members.meta.org.au/themes/openhub/fonts/frutiger_roman/frutiger_roman.woff") format('woff'),
+        url("/sites/members.meta.org.au/themes/openhub/fonts/frutiger_roman/frutiger_roman.ttf") format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
 
 body, p {
 	font-family: 'Frutiger Roman', sans-serif;
@@ -190,7 +149,7 @@ h5 {
 
 
 /**
-  LOGO, ICONS
+2.  LOGO, ICONS
   ---------------------------------------------
 **/
 
@@ -225,7 +184,7 @@ h5 {
 
 
 /**
-  PAGE HEADERS
+ 3. PAGE HEADERS
   ---------------------------------------------
 **/
 
@@ -241,7 +200,7 @@ h5 {
 
 
 /**
-  THREADED COMMENTS
+  4. THREADED COMMENTS
   ---------------------------------------------
 **/
 #comments .comment{
@@ -307,7 +266,7 @@ h5 {
 }
 
 /** 
-  Fixes for THREADED COMMENTS
+  5. Fixes for THREADED COMMENTS
 */
 
 #comments .comment a.permalink {
@@ -335,7 +294,7 @@ h5 {
 
 
 /**
-  LOGIN PAGE
+  6. LOGIN PAGE
   ---------------------------------------------
 **/
 .not-logged-in.page-user-register .container,
@@ -413,7 +372,7 @@ h5 {
 
 
 /**
-   JOIN THE CONVERSATION
+  7. JOIN THE CONVERSATION
   ---------------------------------------------
 **/
 .page-conversations #block-system-main {
@@ -494,7 +453,7 @@ h5 {
 }
 
 /**
-  Welcome page
+  8. Welcome page
   ---------------------------------------------
 **/
 
@@ -512,7 +471,7 @@ h5 {
 }
 
 /**
-  PARTNERS
+  9. PARTNERS
   ---------------------------------------------
 **/
 .page-node #main-content #content-body {
