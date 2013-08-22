@@ -23,7 +23,7 @@ IIN Stylesheet - Please only change fonts, IIN-specific fonts sizes, images and 
 1. BODY & BLOCK COLOR & BACKGROUND CHANGES
 
 
-Orange: #ed6a26
+Yellow: #F49200
 Light Grey: #f2f2f2
  *****************************/
 
@@ -35,6 +35,7 @@ body {
 #block-block-8 {
   background: none;
 }
+
 .orange {
   color: #f49200;
 }
@@ -102,7 +103,7 @@ h1 {
 h2 {
   font-family: 'sansationregular';
   font-size: 1.45em;
-  text-transform: uppercase;
+  text-transform: lowercase;
   line-height: 1.5;
 }
 h3 {
@@ -194,7 +195,7 @@ p {
   color: #6a6767;
 }
 .not-logged-in #content #content-head .tabs .nav-tabs > li > a {
-  color: #ed6a26;
+  color: #F49200;
   font-family: 'PT Sans Narrow', sans-serif;
 }
 .not-logged-in #content #content-head .tabs .nav-tabs > li > a.active {
