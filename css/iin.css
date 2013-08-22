@@ -103,7 +103,7 @@ h1 {
 h2 {
   font-family: 'sansationregular';
   font-size: 1.45em;
-  text-transform: lowercase;
+  text-transform: uppercase;
   line-height: 1.5;
 }
 h3 {
@@ -248,6 +248,7 @@ height: 62px;
 }
 .iin-nav ul li a {
   color: gray;
+  text-transform:uppercase;
 }
 .iin-nav ul.nav li a:active {
   color: #ffffff;
