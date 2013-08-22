@@ -175,6 +175,16 @@ p {
 }
 
 
+.iin-feature {
+margin: 0px;
+font-size: 1.3em;
+padding: 5px 10px;
+font-weight: normal;
+margin-bottom: 15px;
+background-color: #f49200;
+color: #fff;
+}
+
 /* ----- Short term order for new hacks ------- */
 
 
