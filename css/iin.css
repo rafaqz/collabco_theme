@@ -4,65 +4,55 @@
 IIN Stylesheet - Please only change fonts, IIN-specific fonts sizes, images and background colors using this file
 
 
-  1. BODY COLOR & BACKGROUND CHANGES
-  2. FONTS & HEADERS
-  3. LOGO, ICONS
-  4. THREADED COMMENTS
-  5. LOGIN PAGE
-  6. JOIN THE CONVERSATION
-  7. NAVIGATION 
-  8. WELCOME PAGE
-  9. PROFILES
-  10. FEATURED CONTENT BLOCK 
-  11. SC RESOURCES BLOCKS 
-  ---------------------------------------------
+1. BODY COLOR & BACKGROUND CHANGES
+2. FONTS & HEADERS
+3. LOGO, ICONS
+4. THREADED COMMENTS
+5. LOGIN PAGE
+6. JOIN THE CONVERSATION
+7. NAVIGATION 
+8. WELCOME PAGE
+9. PROFILES
+10. FEATURED CONTENT BLOCK 
+---------------------------------------------
 
-*/
-
-
+ */
 
 
 /*****************************
 1. BODY & BLOCK COLOR & BACKGROUND CHANGES
 
 
- Orange: #ed6a26
- Light Grey: #f2f2f2
+Orange: #ed6a26
+Light Grey: #f2f2f2
  *****************************/
 
 body {
-  background-color: #D7D4CD;
+  background-color: #d7d4cd;
   background-image: url(../background.png);
   background-repeat: repeat;
 }
-
-
 #block-block-8 {
   background: none;
 }
-
 .orange {
-  color:#f49200;
+  color: #f49200;
 }
-
 .grey {
-  color:#666666;
+  color: #666666;
 }
-
 .divider {
-  border-bottom:#D2D2D2 thin solid;
+  border-bottom: #d2d2d2 thin solid;
 }
-
 .views-row {
-    border-bottom:#DCDCDB thin solid;
+  border-bottom: #dcdcdb thin solid;
 }
 
 
 /**
- 2. FONTS & HEADERS
-  ---------------------------------------------
-*/
-
+2. FONTS & HEADERS
+---------------------------------------------
+ */
 
 @font-face {
   font-family: 'sansationbold';
@@ -73,110 +63,97 @@ body {
   url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-bold.svg#sansationbold') format('svg');
   font-weight: bold;
   font-style: normal;
-font-variant: normal;
+  font-variant: normal;
 }
 
 @font-face {
   font-family: 'sansationitalic';
   src: url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-italic.eot');
   src: url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-italic.eot?#iefix') format('embedded-opentype'),
-       url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-italic.woff') format('woff'),
-       url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-italic.ttf') format('truetype'),
-       url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-italic.svg#sansationitalic') format('svg');
+  url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-italic.woff') format('woff'),
+  url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-italic.ttf') format('truetype'),
+  url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-italic.svg#sansationitalic') format('svg');
   font-weight: normal;
   font-style: italic;
-  font-variant: normal;                                                                                     
+  font-variant: normal;
 }
 
 @font-face {
   font-family: 'sansationregular';
   src: url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-regular.eot');
   src: url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-regular.eot?#iefix') format('embedded-opentype'),
-       url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-regular.woff') format('woff'),
-       url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-regular.ttf') format('truetype'),
-       url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-regular.svg#sansationregular') format('svg');
-       font-weight: normal;
-       font-style: normal;
-	font-variant: normal;
-
+  url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-regular.woff') format('woff'),
+  url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-regular.ttf') format('truetype'),
+  url('/sites/members.meta.org.au/themes/openhub/fonts/sansation_web/sansation-regular.svg#sansationregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
 }
 
 html {
   font-family: 'sansationregular';
 }
-
 h1 {
-font-family: 'sansationregular';
-font-size: 1.9em;
-text-transform: uppercase;
-line-height: 2.2;
+  font-family: 'sansationregular';
+  font-size: 1.9em;
+  text-transform: uppercase;
+  line-height: 2.2;
 }
-
 h2 {
-font-family: 'sansationregular';
-font-size: 1.45em;
-text-transform: uppercase;
-line-height: 1.5;
+  font-family: 'sansationregular';
+  font-size: 1.45em;
+  text-transform: uppercase;
+  line-height: 1.5;
 }
-
 h3 {
-font-family: 'sansationregular';
-font-size:1.2em;
-line-height: 1.5;
+  font-family: 'sansationregular';
+  font-size: 1.2em;
+  line-height: 1.5;
 }
-
 h4 {
-font-family: 'sansationbold';
-font-size:1.4em;
-line-height: 1.5;
+  font-family: 'sansationbold';
+  font-size: 1.4em;
+  line-height: 1.5;
 }
-
 h5 {
-font-family: 'sansationregular';
-font-size:1em;
-line-height: 1.0;
+  font-family: 'sansationregular';
+  font-size: 1em;
+  line-height: 1.0;
 }
-
 .h5 {
-font-family: 'sansationregular';
-font-size:0.9em;
-line-height: 1.0;
+  font-family: 'sansationregular';
+  font-size: 0.9em;
+  line-height: 1.0;
 }
-
-
 p {
-font-family: Helvetica, Arial, sans-serif;;
-font-weight: normal;
-font-size: 0.875em;
-line-height: 1.5;
+  font-family: Helvetica, Arial, sans-serif;;
+  font-weight: normal;
+  font-size: 0.875em;
+  line-height: 1.5;
 }
-
 .p {
-font-family: Helvetica, Arial, sans-serif;;
-font-weight: normal;
-font-size: 0.875em;
-color:#767676;
-line-height: 1.5;
+  font-family: Helvetica, Arial, sans-serif;;
+  font-weight: normal;
+  font-size: 0.875em;
+  color: #767676;
+  line-height: 1.5;
 }
-
 .p2 {
-font-family: Helvetica, Arial, sans-serif;;
-font-weight: normal;
-font-size: 0.75em;
-color:#767676;
-line-height: 1.5;
+  font-family: Helvetica, Arial, sans-serif;;
+  font-weight: normal;
+  font-size: 0.75em;
+  color: #767676;
+  line-height: 1.5;
 }
-
 
 
 /**
 3.  LOGO, ICONS
-  ---------------------------------------------
-**/
+---------------------------------------------
+ **/
 
 #iin-logo {
   padding: 10px;
-
 }
 
 
@@ -184,24 +161,23 @@ line-height: 1.5;
 
 
 /**
-  4. THREADED COMMENTS
-  ---------------------------------------------
-**/
-#comments .comment{
- background:#F3F3F3;
+4. THREADED COMMENTS
+---------------------------------------------
+ **/
+#comments .comment {
+  background: #f3f3f3;
 }
 
-#comments .comment .field-name-comment-body{
- font-family: Helvetica, Arial, sans-serif;
- color: #767676;
+#comments .comment .field-name-comment-body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #767676;
 }
-
 
 
 /**
-  5. LOGIN PAGE
-  ---------------------------------------------
-**/
+5. LOGIN PAGE
+---------------------------------------------
+ **/
 
 .page-user.not-logged-in .title {
   background-image: url('http://metastage.holocene.cc/sites/members.meta.org.au/themes/openhub/meta-logo.png');
@@ -209,26 +185,18 @@ line-height: 1.5;
   background-position: left top;
   padding-top: 100px;
 }
-
 .not-logged-in.page-user-register #content #content-head,
 .not-logged-in.page-user #content #content-head,
 .not-logged-in.page-user-password #content #content-head {
   background-image: url('/sites/members.meta.org.au/themes/openhub/meta-logo.png');
 }
-
-
 .not-logged-in #content #content-head #page-title {
   color: #6a6767;
 }
-
-
-
 .not-logged-in #content #content-head .tabs .nav-tabs > li > a {
   color: #ed6a26;
   font-family: 'PT Sans Narrow', sans-serif;
 }
-
-
 .not-logged-in #content #content-head .tabs .nav-tabs > li > a.active {
   color: #6a6767;
   border-bottom: 3px solid #6a6767;
@@ -236,150 +204,112 @@ line-height: 1.5;
 
 
 /**
-  6. JOIN THE CONVERSATION
-  ---------------------------------------------
-**/
+6. JOIN THE CONVERSATION
+---------------------------------------------
+ **/
 
-.node-type-discussion .node-discussion .links .comment-add a.active {
-  color: #0088cc; 
+.node-type-conversation .node-conversation .links .comment-add a.active {
+  color: #0088cc;
 }
-
 .conversationtitlediv {
-	border-bottom:#e3e3e2 thin solid;
-	font-family: 'sansationregular';
-	color:#f49200;
+  border-bottom: #e3e3e2 thin solid;
+  font-family: 'sansationregular';
+  color: #f49200;
 }
-
 /*.cicon {
-	background-image: url(../images/conversationtitleicon.png); max-width:100%;  
-	background-repeat: no-repeat;
-	background-position: 0px -4px;
-	height:62px;	
+background-image: url(../images/conversationtitleicon.png); max-width: 100%;  
+background-repeat: no-repeat;
+background-position: 0px -4px;
+height: 62px;	
 }*/
-
-.discussionpreview {
-	background-color: #F3F3F3;
+.conversationpreview {
+  background-color: #f3f3f3;
 }
-
-.discussioncomment {
-	background-color: #ffffff;
+.conversationcomment {
+  background-color: #ffffff;
 }
-
 .iin-join-conversation-block {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
-
 .iin-join-conversation-block h2 {
   color: orange;
   border-bottom: #cccccc thin solid;
 }
 
-.iin-sc-discussion {
-  background-color: #FFF;
-}
-
-
-.iin-sc-discussion h2 {
-  background-color: orange;
-  color: #FFF;
-}
-
-
 
 /** 7. NAVIGATION 
 ---------------------------------------------
-**/
+ **/
 
-.iin-nav ul.nav li  {
-  background-image:url(../nav_arrow.png);
-  border-color: #DADAD9;
+.iin-nav ul.nav li {
+  background-image: url(../nav_arrow.png);
+  border-color: #dadad9;
 }
-
 .iin-nav ul li a {
   color: gray;
 }
-
 .iin-nav ul.nav li a:active {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: orange;
 }
-
-
 .iin-nav ul.about li {
-  background-image:url(../honeycomb_nav.png);
+  background-image: url(../honeycomb_nav.png);
 }
 
 
 /**
-  8. WELCOME PAGE
-  ---------------------------------------------
-**/
+8. WELCOME PAGE
+---------------------------------------------
+ **/
 
 .main .block {
-  border: thin solid #DFDFDF;
+  border: thin solid #dfdfdf;
   margin-bottom: 10px;
   box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
   -moz-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
   -webkit-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
   background-color: #fff;
 }
-
 #block-views-slideshow-block {
-  background-color: #F49200;
+  background-color: #f49200;
 }
-
 .iin-slideshow .views-field-nothing {
   color: #fff;
 }
-
 #page-title {
   color: #f49200;
 }
 
 
-
 /** 9. PROFILES 
 ---------------------------------------------
-**/
+ **/
 
 .iin-profile-block {
-  background-color: #FFF;
+  background-color: #fff;
 }
-
 #iin-profile-title {
- 	  background-color: #F49200;
-    color: #FFFFFF;
+  background-color: #f49200;
+  color: #ffffff;
 }
-
 .iin-user-profile {
-  background-color: #FFF;
+  background-color: #fff;
 }
 
-
-/** 10. FEATURED CONTENT BLOCK 
+/** 10. MEMBER ORGANISATION PROFILES 
 ---------------------------------------------
-**/
+ */
+
+
+/** 11. FEATURED CONTENT BLOCK 
+---------------------------------------------
+ **/
 
 .iin-feature {
-  background-color: #FFF;
+  background-color: #fff;
 }
-
 .iin-feature h2 {
   background-color: #f49200;
-  color: #FFF;
+  color: #fff;
 }
 
-
-/** 11. SC RESOURCES BLOCK
----------------------------------------------
-**/
-
-.iin-sc-resources {
-  background-color: #FFF;
-}
-
-
-.iin-sc-resources h2 {
-  background-color: orange;
-  color: #FFF;
-}

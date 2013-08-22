@@ -40,3 +40,10 @@ regions[sidebar_second] = Second sidebar
 regions[main_lower] = Main: Lower
 regions[main_bottom] = Main: Bottom
 regions[footer] = Footer
+
+
+; Information added by drush on 2013-08-21
+version = "unknown"
+project = "openhub"
+datestamp = "1377078268"
+

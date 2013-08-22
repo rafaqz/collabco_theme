@@ -3,32 +3,31 @@
 GLOBAL Stylesheet - Please DO NOT add theme-specific fonts sizes, images and background colors using this file
 
 
-  1. BODY & BACKGROUND
-  2. FONTS & HEADERS
-  3. NAVIGATION
-  4. WELCOME PAGE
-  5. RECENT ACTIVITY BLOCK
-  6. SEARCH BAR HACK
-  7. THREADED COMMENTS
-    7a. Fixes for THREADED COMMENTS
-  8. JOIN THE CONVERSATION BLOCK & DISCUSSION PAGES
-  9. PROFILES 
-  10. MEMBER ORGANISATION PROFILES 
-  11. FEATURED CONTENT BLOCK
-  12. SC RESOURCES BLOCK
-  13. PARTNERS
-  14. LOGIN PAGE
+1. BODY & BACKGROUND
+2. FONTS & HEADERS
+3. LOGO, ICONS
+4. THREADED COMMENTS
+4a. Fixes for THREADED COMMENTS
+5. LOGIN PAGE
+6. JOIN THE CONVERSATION BLOCK & conversation PAGES
+7. NAVIGATION
+8. WELCOME PAGE
+9. PROFILES
+10. MEMBER ORGANISATION PROFILES
+11. FEATURED CONTENT BLOCK
+13. PARTNERS
+14. RECENT ACTIVITY BLOCK
+15. SEARCH BAR HACK
 
-  ---------------------------------------------
+---------------------------------------------
 
-*/
-
+ */
 
 
 /**
 1. BODY & BACKGROUND
-  ---------------------------------------------
-*/
+---------------------------------------------
+ */
 
 body {
   font-family: Helvetica, Arial, sans-serif;
@@ -36,20 +35,16 @@ body {
   font-style: normal;
   line-height: 20px;
 }
-
 .divider {
   height: 2px;
-  margin-top:-10px;
-  margin-bottom:10px;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
-
-
 .views-row {
-    clear: both;
-    margin-bottom: 1em;
-    padding-bottom: 10px;
+  clear: both;
+  margin-bottom: 1em;
+  padding-bottom: 10px;
 }
-
 .twocolgrid {
   float: left;
   width: 40%;
@@ -60,247 +55,89 @@ body {
   vertical-align: baseline;
   margin-left: 10px;
 }
-
-
 .block .content {
-	padding-left: 10px;
-	padding-right:10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
-
 /**
- 2. FONTS & HEADERS
-  ---------------------------------------------
-*/
+2. FONTS & HEADERS
+---------------------------------------------
+ */
 
 h1 {
-font-family: Helvetica, Arial, sans-serif;
-font-size: 1.9em;
-text-transform: uppercase;
-line-height: 2.2;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.9em;
+  text-transform: uppercase;
+  line-height: 2.2;
 }
-
 h2 {
-font-family: Helvetica, Arial, sans-serif;
-font-size: 1.45em;
-text-transform: uppercase;
-line-height: 1.5;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.45em;
+  text-transform: uppercase;
+  line-height: 1.5;
 }
-
 h3 {
-font-family: Helvetica, Arial, sans-serif;
-font-size:1.2em;
-line-height: 1.5;
-}
-
-h4 {
-font-family: Helvetica, Arial, sans-serif;
-font-size:1.4em;
-line-height: 1.5;
-}
-
-h5 {
-font-family: Helvetica, Arial, sans-serif;
-font-size:1em;
-line-height: 1.0;
-}
-
-.h5 {
-font-family: Helvetica, Arial, sans-serif;
-font-size:0.9em;
-line-height: 1.0;
-}
-
-
-p {
-font-family: Helvetica, Arial, sans-serif;
-font-weight: normal;
-font-size: 0.875em;
-line-height: 1.5;
-}
-
-.p {
-font-family: Helvetica, Arial, sans-serif;
-font-weight: normal;
-font-size: 0.875em;
-line-height: 1.5;
-}
-
-.p2 {
-font-family: Helvetica, Arial, sans-serif;
-font-weight: normal;
-font-size: 0.75em;
-line-height: 1.5;
-}
-
-
-/** 
-3. NAVIGATION 
----------------------------------------------
-**/
-.iin-nav ul.nav {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-}
-
-.iin-nav ul.nav li  {
-  background-repeat: no-repeat;
-  background-position: 0 .4em;
-  padding-left: 2.6em;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 1.2em;
-  padding-top:10px;
-  padding-bottom: 10px;
-  border-top-style: dotted;
-  border-width: 1px;
+  line-height: 1.5;
+}
+h4 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5;
+}
+h5 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.0;
+}
+.h5 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+  line-height: 1.0;
+}
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+.p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+.p2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 0.75em;
+  line-height: 1.5;
 }
 
-.iin-nav ul.about {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-}
-
-.iin-nav ul.about li {
-  background-repeat: no-repeat;
-  background-position: 0 1em;
-  padding-left: 2.6em;
-  border-style: none; 
-}
+/**
+3.  LOGO, ICONS
+---------------------------------------------
+ **/
 
 
 /**
-  4. WELCOME PAGE
-  ---------------------------------------------
-**/
+4. THREADED COMMENTS
+---------------------------------------------
+ */
 
-.main .block {
-  border: thin solid #DFDFDF;
-  margin-bottom: 10px;
-  box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  -moz-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  -webkit-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  background-color: #fff;
-}
-
-#block-views-slideshow-block .content {
-  padding: 0px;
-}
-
-#block-block-8 .content {
-  padding: 0px;
-  margin-top: -8px;
-}
-
-.iin-slideshow .views-field-nothing {
-  padding: 0 10px;
-  height: 80px
-}
-
-#page-title {
-  line-height:1;
-}
-
-
-/**
-  5. RECENT ACTIVITY BLOCK
-  ---------------------------------------------
-*/
-.view-recent-activity .activity-details {
-  margin-left: 5px;
-  float: none;
-  padding-left: 55px;
-  width: 100%;
-}
-.view-recent-activity .activity-details > p {
-  margin-bottom: 0px;
-}
-.view-recent-activity .activity-details > em {
-  font-size: 12px;
-}
-
-.commentbubble {
-  height: 20px;
-  width:20px;
-  margin: -12px 0 -7px 30px;
-  z-index:99;
-  position:relative;
-}
-
-.commentbubble p {
-  margin-right: 8px;
-}
-
-.top20 {
-  margin-top: 20px;
-}
-
-.commentbubble {
-  background: url(../images/bubbletop.png) no-repeat top !important;
-}
-
-.bubble_border {
-  border-radius:10px;
-  border:#D0D0D0 thin solid;
-  background: #f4f4f4;
-  padding: 15px;
-}
-
-
-/**
-  6. SEARCH BAR HACK
-  ---------------------------------------------
-*/
-
-.form-actions {
-    background-color: transparent;
-    border-top: 0;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    padding: 19px 20px 20px;
-}
-
-#block-search-form .block {
-  border: 0 !important;
-  box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-}
-
-#block-search-form {
-  height: 34px;
-}
-
-.nobordershadow {
-  border: 0 !important;
-  box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-}
-
-.nobackground {
-  background: none !important;
-}
-
-
-/**
-  7. THREADED COMMENTS
-  ---------------------------------------------
-*/
-.comment-bubble 
-{
+.comment-bubble {
   position: relative;
   width: 220px;
-  min-height:50px;
+  min-height: 50px;
   padding: 10px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
 }
-
-.comment-bubble:before 
-{
+.comment-bubble:before {
   content: "";
   position: absolute;
   top: -30px;
@@ -311,9 +148,7 @@ line-height: 1.5;
   width: 0;
   z-index: 0;
 }
-
-.comment-bubble:after 
-{
+.comment-bubble:after {
   content: "";
   position: absolute;
   top: -28px;
@@ -324,88 +159,79 @@ line-height: 1.5;
   width: 0;
   z-index: 1;
 }
-
-.discussioncomment {
+.conversationcomment {
   background-color: #ffffff;
   margin-left: -5px;
   padding: 10px 10px 10px 10px;
   width: 85%;
   margin-top: 10px;
 }
-
 .commentquote {
   margin-left: -5px;
 }
-
 .commentname {
   padding-right: 5px;
   margin-right: -5px;
 }
-
 .comment span.new {
   display: none;
 }
-
-#comments .comment{
- margin:0 0px 15px 0px;
- padding:12px;
+#comments .user-picture {
+  float: left;
+  width: 55px;
+  height: 55px;
+  padding: 10px 0 0 10px;
+}
+#comments .comment {
+  background: #F3F3F3;
+  margin: 0 0px 15px 0px;
+  padding: 12px;
+}
+#comments .comment .field-name-comment-body {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #767676;
+}
+#comments h3 {
+  font-size: 1.2em;
+  line-height: 1.5;
+  display: block;
+  padding-bottom: 6px;
+  padding-left: 74px;
+  background: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 4px;
+}
+#comments .submitted {
+  font-weight: normal;
+  font-size: 0.875em;
+  line-height: 1.5;
+  font-weight: bold;
+  font-style: italic;
+  padding-left: 74px;
+  background: white;
+  margin-bottom: 0px;
+  padding-right: 28px;
+}
+#comments .content {
+  background: white;
+  margin: 0px;
+  padding: 12px;
+}
+#comments .field-name-comment-body {
+  margin-bottom: 0px;
+}
+#comments .links {
+  margin: 10px 10px 0px 0px;
+  display: block;
 }
 
-#comments .user-picture{
- float:left;
- width:55px;
- height:55px;
- padding:10px 0 0 10px;
-}
-
-#comments .comment .field-name-comment-body{
- font-weight: normal;
- font-size: 12px;
- line-height: 1.5;
-}
-
-#comments h3{
- font-size: 1.2em;
- line-height: 1.5;
- display:block;
- padding-bottom:6px;
- padding-left: 74px;
- background: white;
- margin-top: 0px;
- margin-bottom:0px;
- padding-top:4px;
-}
-
-#comments .submitted{
- font-weight: normal;
- font-size: 0.875em;
- line-height: 1.5;
- font-weight: bold;
- font-style: italic;
- padding-left: 74px;
- background: white;
- margin-bottom:0px;
- padding-right:28px;
-}
-
-#comments .content{
- background: white;
- margin:0px;
- padding:12px;
-}
-
-#comments .field-name-comment-body{
- margin-bottom:0px;
-}
-
-#comments .links{
- margin:10px 10px 0px 0px;
- display:block;
-}
 
 /** 
-  7a. Fixes for THREADED COMMENTS
-*/
+4a. Fixes for THREADED COMMENTS
+ */
 
 #comments .comment a.permalink {
   display: none;
@@ -422,8 +248,7 @@ line-height: 1.5;
 #comments .comment .submitted span a {
   display: block;
 }
-
-.discussioncomment .commentquote {
+.conversationcomment .commentquote {
   float: none;
   width: 100%;
   clear: both;
@@ -432,15 +257,81 @@ line-height: 1.5;
 
 
 /**
-  8. JOIN THE CONVERSATION BLOCK & DISCUSSION PAGES
-  ---------------------------------------------
-*/
+14. LOGIN PAGE
+---------------------------------------------
+ */
+.not-logged-in.page-user-register .container,
+.not-logged-in.page-user .container,
+.not-logged-in.page-user-password .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.not-logged-in.page-user-register #content #content-head,
+.not-logged-in.page-user #content #content-head,
+.not-logged-in.page-user-password #content #content-head {
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 100px;
+}
+.not-logged-in.page-user-register #content #content-head .title,
+.not-logged-in.page-user #content #content-head .title,
+.not-logged-in.page-user-password #content #content-head .title {
+  display: none;
+}
+.not-logged-in.page-user-register #content.mc-content,
+.not-logged-in.page-user #content.mc-content,
+.not-logged-in.page-user-password #content.mc-content {
+  width: 100%;
+  margin: 0 auto;
+  float: none;
+}
+.not-logged-in #content #content-head #page-title {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-position: center top;
+}
+.not-logged-in #content #content-head .tabs .nav-tabs {
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.not-logged-in #content #content-head .tabs .nav-tabs > li {
+  display: inline-block;
+  float: none;
+}
+.not-logged-in #content #content-head .tabs .nav-tabs > li > a {
+  padding: 0 0 5px 0 !important;
+  margin: 10px;
+  width: 120px;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 0;
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.not-logged-in #content #content-head .tabs .nav-tabs > li > a.active {
+  background-color: inherit;
+}
+.page-user.not-logged-in .title {
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-top: 100px;
+}
+
+
+/**
+6. JOIN THE CONVERSATION BLOCK & conversation PAGES
+---------------------------------------------
+ */
 
 .page-conversations #block-system-main {
   padding-top: 0px;
 }
-
-.page-conversations .discussioncomment {
+.page-conversations .conversationcomment {
   margin-bottom: 10px;
 }
 .page-conversations #block-block-10 {
@@ -450,43 +341,35 @@ line-height: 1.5;
 .page-conversations #block-block-10 p {
   margin: 0px;
 }
-
 .view-conversation-titles .views-row {
   margin-bottom: 0;
   border-bottom: none;
   padding-bottom: 0;
 }
-
 .view-join-the-coversation #content-top .content p {
   margin: 8px 0;
 }
-
 .view-join-the-coversation .current-conversation-title {
 
 }
-
-.view-join-the-coversation .discussionpreview .discussioncomment div {
+.view-join-the-coversation .conversationpreview .conversationcomment div {
   min-height: 0px;
 }
-
 .view-join-the-coversation .views-field {
   padding: 0;
 }
-
 .conversationtitlediv {
-  width:100%;
-	height:60px;
-	font-size: 1.2em;
-	text-transform: uppercase;
-	text-align:left;
-	vertical-align: middle;
-	line-height: 2.2;
+  width: 100%;
+  height: 60px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: left;
+  vertical-align: middle;
+  line-height: 2.2;
 }
-
 .iin-join-conversation-block {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
-
 .iin-join-conversation-block h2 {
   text-align: center;
   width: 85%;
@@ -495,64 +378,118 @@ line-height: 1.5;
   margin-top: 10px;
   padding-bottom: 5px;
 }
-
 /*.cicon {
-	background-image: url(../images/conversationtitleicon.png); max-width:100%;  
-	background-repeat: no-repeat;
-	background-position: 0px -4px;
-	height:62px;	
+background-image: url(../images/conversationtitleicon.png); max-width: 100%;  
+background-repeat: no-repeat;
+background-position: 0px -4px;
+height: 62px;	
 }*/
-
-.discussionpreview {
-    margin-left: -15px;
-    padding: 10px 20px;
-    width: 92%;
+.conversationpreview {
+  margin-left: -15px;
+  padding: 10px 20px;
+  width: 92%;
+  background-color: #f3f3f3;
 }
-
-.node-type-discussion .submitted .submitted-content-posted {
+.node-type-conversation .submitted .submitted-content-posted {
   font-style: italic;
 }
-
-.iin-sc-discussion {
-  background-color: #FFF;
+.iin-sc-conversation {
+  background-color: #fff;
 }
-
-.iin-sc-discussion p {
+.iin-sc-conversation p {
   padding: 1em;
 }
-
-.iin-sc-discussion h2 {
+.iin-sc-conversation h2 {
   margin: 0px;
   text-align: center;
   font-size: 20px;
 }
-
 .view-join-the-coversation .views-field {
-  background-color: #FFF;
+  background-color: #fff;
   padding: 0 20px 20px;
   margin-bottom: 20px;
+}
 
+
+/** 
+7. NAVIGATION 
+---------------------------------------------
+ **/
+.iin-nav ul.nav {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+.iin-nav ul.nav li {
+  background-repeat: no-repeat;
+  background-position: 0 .4em;
+  padding-left: 2.6em;
+  font-size: 1.2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top-style: dotted;
+  border-width: 1px;
+}
+.iin-nav ul.about {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+.iin-nav ul.about li {
+  background-repeat: no-repeat;
+  background-position: 0 1em;
+  padding-left: 2.6em;
+  border-style: none;
+}
+
+
+
+/**
+8. WELCOME PAGE
+---------------------------------------------
+ **/
+
+.main .block {
+  border: thin solid #dfdfdf;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  background-color: #fff;
+}
+#block-views-slideshow-block .content {
+  padding: 0px;
+}
+#block-block-8 .content {
+  padding: 0px;
+  margin-top: -8px;
+}
+.iin-slideshow .views-field-nothing {
+  padding: 0 10px;
+  height: 80px;
+}
+#page-title {
+  line-height: 1;
 }
 
 
 /** 9. PROFILES 
 ---------------------------------------------
-*/
+ */
 
 .iin-profile-block {
-  background-color: #FFF;
+  background-color: #fff;
   padding: 10px 0;
 }
-
 #iin-profile-title {
-    font-size: 1.3em;
-    font-weight: normal;
-    margin: -10px -10px 15px;
-    padding:  5px 10px;
+  font-size: 1.3em;
+  font-weight: normal;
+  margin: -10px -10px 15px;
+  padding: 5px 10px;
 }
 #iin-profile-welcome {
   display: inline;
-  font-style:italic;
+  font-style: italic;
 }
 #iin-profile-name {
   display: inline;
@@ -566,18 +503,16 @@ line-height: 1.5;
 #iin-profile-picture {
   padding: 0px;
 }
-
-.node-type-discussion .userpicture {
+.node-type-conversation .userpicture {
   float: left;
   margin: 0px 10px 10px 0;
 }
-
 .iin-user-profile {
-  background-color: #FFF;
+  background-color: #fff;
   padding: 20px;
 }
 .iin-user-profile #user-picture {
-  float:left;
+  float: left;
   padding-top: 25px;
 }
 .profile2-iin-kickstarter {
@@ -587,24 +522,21 @@ line-height: 1.5;
   padding: 10px;
 }
 #kickstarter-profile h3 {
-  display: none
+  display: none;
 }
 #block-system-main {
   padding-top: 20px;
 }
-
 /*grids*/
 .custom-grid li {
   margin: 0 !important;
   height: 250px !important;
   overflow: none;
 }
-
-.page-node-207 #block-system-main, 
-.front #block-system-main { 
+.page-node-207 #block-system-main,
+.front #block-system-main {
   display: none;
 }
-
 #block-views-all-users-block {
   padding-top: 15px;
 }
@@ -612,7 +544,7 @@ line-height: 1.5;
 
 /** 10. MEMBER ORGANISATION PROFILES 
 ---------------------------------------------
-*/
+ */
 
 .view-member-organisations .views-row {
   clear: both;
@@ -620,78 +552,65 @@ line-height: 1.5;
   padding-bottom: 10px;
   border-bottom: none;
 }
-
 .view-member-organisations ul li {
-  display:inline;
+  display: inline;
 }
-
 .view-member-organisations ul {
-  padding-bottom:10px;
-  margin-bottom:15px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
   height: 80px;
 }
-
 .iin-feature .views-field-field-organisation-image {
   float: left;
 }
 .iin-feature .view-organizations .views-field-title {
   padding: 30px;
-
 }
-
 .marginleft20 {
-  margin-left:20px;
+  margin-left: 20px;
 }
-
 .fieldset-title {
-  font-size:0.7em !important;
+  font-size: 0.7em !important;
 }
-
 .field-collection-view {
   margin-bottom: 20px;
 }
-
 #quicktabs-services .ui-widget-header {
   padding: 0px;
 }
-
 #quicktabs-services .ui-state-default {
-  
-}
 
+}
 #quicktabs-services li {
-  width:24%
+  width: 24%;
 }
-
 .ui-tabs-nav li {
   width: 24%;
   margin-bottom: 5px;
   height: 70px;
-  white-space:normal;
+  white-space: normal;
 }
-
 .ui-tabs-nav li a {
-float: left;
-padding: .5em 1em;
-text-decoration: none;
-white-space: normal;
+  float: left;
+  padding: .5em 1em;
+  text-decoration: none;
+  white-space: normal;
 }
 
 #quicktabs-services {
-  margin-top:20px;
-  padding-bottom:20px;
-  margin-bottom:20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 
 /** 11. FEATURED CONTENT BLOCK 
 ---------------------------------------------
-*/
+ */
 
 .iin-feature {
-  background-color: #FFF;
+  background-color: #fff;
 }
-
 .iin-feature h2 {
   margin: 0px;
   font-size: 1.3em;
@@ -699,114 +618,91 @@ white-space: normal;
   font-weight: normal;
   margin-bottom: 15px;
 }
-
-.iin-feature .view-organizations ul{
+.iin-feature .view-organizations ul {
   list-style-type: none;
 }
-
 #block-block-11 .content {
   padding: 0px !important;
 }
 
 
-/** 12. SC RESOURCES BLOCK 
----------------------------------------------
-*/
-
-.iin-sc-resources {
-  background-color: #FFF;
-}
-
-.iin-sc-resources p {
-  padding: 1em;
-}
-.iin-sc-resources h2 {
-  margin: 0px;
-  text-align: center;
-  font-size: 20px;
-}
-
-
 /**
-  13. PARTNERS
-  ---------------------------------------------
-*/
+13. PARTNERS
+---------------------------------------------
+ */
 .page-node #main-content #content-body {
   margin-bottom: 10px;
 }
 
-
 /**
-  14. LOGIN PAGE
-  ---------------------------------------------
-*/
-.not-logged-in.page-user-register .container,
-.not-logged-in.page-user .container,
-.not-logged-in.page-user-password .container {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.not-logged-in.page-user-register #content #content-head,
-.not-logged-in.page-user #content #content-head,
-.not-logged-in.page-user-password #content #content-head {
-  margin-top: 10px;
-  background-repeat: no-repeat;
-  background-position: center top;
-  padding-top: 100px;
-}
-
-.not-logged-in.page-user-register #content #content-head .title,
-.not-logged-in.page-user #content #content-head .title,
-.not-logged-in.page-user-password #content #content-head .title {
-  display: none;
-}
-
-.not-logged-in.page-user-register #content.mc-content,
-.not-logged-in.page-user #content.mc-content,
-.not-logged-in.page-user-password #content.mc-content {
-  width: 100%;
-  margin: 0 auto;
+14. RECENT ACTIVITY BLOCK
+---------------------------------------------
+ */
+.view-recent-activity .activity-details {
+  margin-left: 5px;
   float: none;
+  padding-left: 55px;
+  width: 100%;
 }
-
-.not-logged-in #content #content-head #page-title {
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 10px;
-  background-position: center top;
-}
-
-.not-logged-in #content #content-head .tabs .nav-tabs  {
-  border: none;
-  margin-top: 20px;
+.view-recent-activity .activity-details > p {
   margin-bottom: 0px;
 }
-
-.not-logged-in #content #content-head .tabs .nav-tabs > li {
-  display: inline-block;
-  float: none;
+.view-recent-activity .activity-details > em {
+  font-size: 12px;
+}
+.commentbubble {
+  height: 20px;
+  width: 20px;
+  margin: -12px 0 -7px 30px;
+  z-index: 99;
+  position: relative;
+}
+.commentbubble p {
+  margin-right: 8px;
+}
+.top20 {
+  margin-top: 20px;
+}
+.commentbubble {
+  background: url(../images/bubbletop.png) no-repeat top !important;
+}
+.bubble_border {
+  border-radius: 10px;
+  border: #d0d0d0 thin solid;
+  background: #f4f4f4;
+  padding: 15px;
 }
 
-.not-logged-in #content #content-head .tabs .nav-tabs > li > a {
-  padding: 0 0 5px 0 !important;
-  margin: 10px;
-  width: 120px;
-  font-size: 21px;
-  font-weight: bold;
-  padding: 0;
-  border: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
+
+/**
+15. SEARCH BAR HACK
+---------------------------------------------
+ */
+
+.form-actions {
+  background-color: transparent;
+  border-top: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 19px 20px 20px;
+}
+#block-search-form .block {
+  border: 0 !important;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+#block-search-form {
+  height: 34px;
+}
+.nobordershadow {
+  border: 0 !important;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+.nobackground {
+  background: none !important;
 }
 
-.not-logged-in #content #content-head .tabs .nav-tabs > li > a.active {
-  background-color: inherit;
-}
 
-.page-user.not-logged-in .title {
-  background-repeat: no-repeat;
-  background-position: left top;
-  padding-top: 100px;
-}
