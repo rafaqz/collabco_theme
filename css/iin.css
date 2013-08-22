@@ -280,12 +280,9 @@ height: 62px;
  **/
 
 .main .block {
-  border: thin solid #dfdfdf;
+
   margin-bottom: 10px;
-  box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  -moz-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  -webkit-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  background-color: #fff;
+
 }
 #block-views-slideshow-block {
   background-color: #f49200;
