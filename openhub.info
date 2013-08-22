@@ -7,7 +7,7 @@ version = 1.0
 stylesheets[all][] = css/bootstrap.css
 stylesheets[all][] = css/bootstrap-responsive.css
 stylesheets[all][] = css/style.css
-stylesheets[all][] = css/meta.css
+stylesheets[all][] = css/iin.css
 scripts[] = js/script.js
 
 regions[admin_shortcuts] = Admin Shortcuts (Authenticated Users Only)
@@ -46,4 +46,11 @@ regions[footer] = Footer
 version = "unknown"
 project = "openhub"
 datestamp = "1377078268"
+
+
+
+; Information added by drush on 2013-08-21
+version = "unknown"
+project = "openhub"
+datestamp = "1377142827"
 
