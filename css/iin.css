@@ -239,6 +239,7 @@ height: 62px;
 }*/
 .conversationpreview {
   background-color: #f3f3f3;
+  margin-bottom: 15px;
 }
 .conversationcomment {
   background-color: #ffffff;
