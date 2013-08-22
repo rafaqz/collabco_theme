@@ -217,6 +217,10 @@ p {
   font-family: 'sansationregular';
   color: #f49200;
 }
+
+.page-conversations #block-system-main {
+  background-color: #ffffff;
+}
 /*.cicon {
 background-image: url(../images/conversationtitleicon.png); max-width: 100%;  
 background-repeat: no-repeat;
