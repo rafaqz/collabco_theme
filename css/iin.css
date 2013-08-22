@@ -49,6 +49,11 @@ body {
   border-bottom: #dcdcdb thin solid;
 }
 
+#content-body {
+  padding:10px;
+  background-color: #ffffff;
+}
+
 
 /**
 2. FONTS & HEADERS
