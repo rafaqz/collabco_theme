@@ -31,7 +31,12 @@ body {
   background-color: #d7d4cd;
   background-image: url(../background.png);
   background-repeat: repeat;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 20px;
 }
+
 #block-block-8 {
   background: none;
 }
@@ -192,7 +197,7 @@ p {
  **/
 
 .page-user.not-logged-in .title {
-  background-image: url('http://metastage.holocene.cc/sites/members.meta.org.au/themes/openhub/meta-logo.png');
+  background-image: url('/sites/profiles/colabco/themes/openhub/meta-logo.png');
   background-repeat: no-repeat;
   background-position: left top;
   padding-top: 100px;
@@ -200,7 +205,7 @@ p {
 .not-logged-in.page-user-register #content #content-head,
 .not-logged-in.page-user #content #content-head,
 .not-logged-in.page-user-password #content #content-head {
-  background-image: url('/sites/members.meta.org.au/themes/openhub/meta-logo.png');
+  background-image: url('/sites/themes/openhub/meta-logo.png');
 }
 .not-logged-in #content #content-head #page-title {
   color: #6a6767;
