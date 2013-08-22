@@ -51,7 +51,13 @@ body {
 
 #content-body {
   padding:10px;
-  background-color: #ffffff;
+  max-width:465px;
+  border: thin solid #dfdfdf;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  background-color: #fff;
 }
 
 
@@ -223,9 +229,7 @@ p {
   color: #f49200;
 }
 
-.page-conversations #block-system-main {
-  background-color: #ffffff;
-}
+
 /*.cicon {
 background-image: url(../images/conversationtitleicon.png); max-width: 100%;  
 background-repeat: no-repeat;
