@@ -171,7 +171,7 @@ p {
 
 #nav-logo {
   margin-top: 10px;
-  margin-bottom:10px;
+  margin-bottom:20px;
 }
 
 .cicon {
@@ -196,6 +196,7 @@ padding-right: 15px;
 
 #iin-profile-content {
 	margin-left:-10px;
+	margin-bottom:10px;
 }
 
 /* ----- Short term order for new hacks ------- */
@@ -306,7 +307,7 @@ padding-right: 15px;
 font-size: 1.3em;
 font-weight: normal;
 margin: -15px -15px 15px;
-padding: 5px 10px;
+padding: 10px 15px;
 }
 
 
