@@ -446,12 +446,7 @@ height: 62px;
  **/
 
 .main .block {
-  margin-bottom: 10px;
-  border: thin solid #dfdfdf;
-  box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  -moz-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  -webkit-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  background-color: #fff;
+
 }
 #block-views-slideshow-block .content {
   padding: 0px;
@@ -476,7 +471,13 @@ height: 62px;
 .iin-profile-block {
   background-color: #fff;
   padding: 10px 0;
+  margin-bottom: 10px;
+  border: thin solid #dfdfdf;
+  box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
 }
+
 #iin-profile-title {
   font-size: 1.3em;
   font-weight: normal;
@@ -605,6 +606,12 @@ height: 62px;
  */
 
 .iin-feature {
+  background-color: #fff;
+  margin-bottom: 10px;
+  border: thin solid #dfdfdf;
+  box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
   background-color: #fff;
 }
 .iin-feature h2 {
