@@ -645,6 +645,7 @@ height: 62px;
   float: none;
   padding-left: 55px;
   width: 100%;
+  margin-bottom:5px;
 }
 .view-recent-activity .activity-details > p {
   margin-bottom: 0px;
