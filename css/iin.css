@@ -301,6 +301,7 @@ background-color: #f49200;
 
 .main .block {
   margin-bottom: 10px;
+  padding-bottom:10px;
 }
 
 #block-views-slideshow-block {
