@@ -189,6 +189,11 @@ margin-bottom: 15px;
 background-color: #f49200;
 }
 
+.block .content {
+padding-left: 15px;
+padding-right: 15px;
+}
+
 /* ----- Short term order for new hacks ------- */
 
 
@@ -291,6 +296,13 @@ background-color: #f49200;
 }
 .iin-nav ul.about li {
   background-image: url(../honeycomb_nav.png);
+}
+
+#iin-profile-title {
+font-size: 1.3em;
+font-weight: normal;
+margin: -15px -15px 15px;
+padding: 5px 10px;
 }
 
 
