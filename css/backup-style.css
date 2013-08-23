@@ -472,13 +472,13 @@ padding-bottom: 10px;
   float:left;
   padding-top: 25px;
 }
-.profile2-iin-kickstarter {
+.profile2-profile {
   padding-left: 130px;
 }
-.profile2-iin-kickstarter .field {
+.profile2-profile .field {
   padding: 10px;
 }
-#kickstarter-profile h3 {
+#profile h3 {
   display: none
 }
 #block-system-main {
