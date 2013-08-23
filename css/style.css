@@ -205,11 +205,8 @@ p {
   padding-top: 4px;
 }
 #comments .submitted {
-  font-weight: normal;
   font-size: 0.875em;
   line-height: 1.5;
-  font-weight: bold;
-  font-style: italic;
   padding-left: 74px;
   background: white;
   margin-bottom: 0px;
