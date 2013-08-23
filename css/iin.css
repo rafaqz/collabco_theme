@@ -172,8 +172,15 @@ p {
 #nav-logo {
   margin-top: 10px;
   margin-bottom:10px;
+  margin-left:-8px;
 }
 
+.cicon {
+background-image: url(../images/conversationtitleicon.png); max-width: 100%;  
+background-repeat: no-repeat;
+background-position: 0px -4px;
+height: 62px;	
+}
 
 .iin-feature {
 margin: 0px;
@@ -244,7 +251,7 @@ color: #fff;
   	width:100%;
 	height:60px;
 	font-family: 'sansationregular';
-	font-size: 1.2em;
+	font-size: 1em;
 	text-transform: uppercase;
 	color:#f49200;
 	text-align:left;
@@ -253,12 +260,6 @@ color: #fff;
 }
 
 
-/*.cicon {
-background-image: url(../images/conversationtitleicon.png); max-width: 100%;  
-background-repeat: no-repeat;
-background-position: 0px -4px;
-height: 62px;	
-}*/
 .conversationpreview {
   background-color: #f3f3f3;
   margin-bottom: 15px;
