@@ -406,6 +406,15 @@ p {
   margin-top: 10px;
   padding-bottom: 5px;
 }
+
+#first-time {
+  color: #fff;
+}
+
+#first-time a {
+  color:#ffffff;
+  text-decoration: none;
+}
 /*.cicon {
 background-image: url(../images/conversationtitleicon.png); max-width: 100%;  
 background-repeat: no-repeat;
