@@ -382,11 +382,7 @@ p {
 }
 
 .conversation-summary {
-  border: thin solid #dfdfdf;
-  box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  -moz-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  -webkit-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  background-color: #fff;
+
 }
 
 .conversation-summary h2 {
