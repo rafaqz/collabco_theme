@@ -347,6 +347,7 @@ padding: 10px 15px;
   background-color: #fff;
 }
 
+
 /** 10. MEMBER ORGANISATION PROFILES 
 ---------------------------------------------
  */
@@ -365,3 +366,12 @@ padding: 10px 15px;
   padding: 10px 15px;
 }
 
+/** 12. User Preferences 
+---------------------------------------------
+ **/
+ .page-user-edit .form-type-password {
+  width: 32em;
+ }
+.page-user-edit #edit-account .password-strength {
+  width: 13em;
+}
