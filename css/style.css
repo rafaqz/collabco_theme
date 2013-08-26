@@ -717,8 +717,12 @@ height: 62px;
   border-radius: 10px;
   border: #d0d0d0 thin solid;
   background: #f4f4f4;
-  padding: 15px;
+  padding: 4%;
   margin-bottom:5px;
+}
+
+.bubble_border p {
+  margin:0px;
 }
 
 
