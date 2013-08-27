@@ -54,11 +54,13 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
 body,
 p {
   font-family: 'Frutiger Roman', sans-serif;
   font-size: 14px;
 }
+
 h1,
 h2,
 h3,
@@ -71,6 +73,7 @@ h5,
   font-weight: 400;
   letter-spacing: 0.1em;
 }
+
 h1 {
   font-size: 1.9em;
   line-height: 2.2;
@@ -172,7 +175,7 @@ h5 {
  **/
 
 .conversationtitlediv {
-  color: #f49200;
+  color: #ed6a26;
 }
 .conversationtitlediv {
   color: #ed6a26;
@@ -190,6 +193,7 @@ h5 {
 }
 .iin-nav ul li a {
   color: gray;
+  text-transform: uppercase;
 }
 .iin-nav ul.nav li a:active {
   color: #ffffff;
@@ -235,7 +239,7 @@ h5 {
   background-color: #fff;
 }
 #iin-profile-title {
-  background-color: #f49200;
+  background-color: #ed6a26;
   color: #ffffff;
 }
 .iin-user-profile {
@@ -255,7 +259,7 @@ h5 {
   background-color: #fff;
 }
 .iin-feature h2 {
-  background-color: #f49200;
+  background-color: #ed6a26;
   color: #fff;
 }
 #block-block-11 .content {
@@ -271,6 +275,6 @@ h5 {
   background-color: #fff;
 }
 .iin-sc-resources h2 {
-  background-color: orange;
+  background-color: #ed6a26;
   color: #fff;
 }
