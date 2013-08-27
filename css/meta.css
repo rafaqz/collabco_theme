@@ -110,11 +110,6 @@ h5 {
   font-size: 1.2em;
   text-transform: uppercase;
 }
-.iin-nav ul.nav li {
-  background-image: url(../images/heroarrow.png);
-  background-repeat: no-repeat;
-  background-position: 0 .4em;
-}
 
 
 /**
@@ -188,7 +183,9 @@ h5 {
  */
 
 .iin-nav ul.nav li {
-  background-image: url(../nav_arrow.png);
+  background-image: url(../images/heroarrow.png);
+  background-repeat: no-repeat;
+  background-position: 0 .4em;
   border-color: #dadad9;
 }
 .iin-nav ul li a {
