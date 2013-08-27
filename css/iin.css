@@ -172,6 +172,7 @@ p {
 #nav-logo {
   margin-top: 10px;
   margin-bottom:20px;
+  max-width:205px;
 }
 
 .cicon {
