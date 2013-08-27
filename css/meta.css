@@ -193,6 +193,7 @@ h5 {
 }
 .iin-nav ul li a {
   color: gray;
+  text-transform: uppercase;
 }
 .iin-nav ul.nav li a:active {
   color: #ffffff;
