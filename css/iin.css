@@ -163,6 +163,10 @@ p {
   line-height: 1.5;
 }
 
+blockquote {
+  font-size: 1em;
+}
+
 
 /**
 3.  LOGO, ICONS
