@@ -47,10 +47,10 @@ body {
 
 @font-face {
   font-family: 'Frutiger Roman';
-  src: url("/sites/members.meta.org.au/themes/openhub/fonts/frutiger_roman/frutiger_roman.eot");
-  src: url("/sites/members.meta.org.au/themes/openhub/fonts/frutiger_roman/frutiger_roman.eot?#iefix") format('embedded-opentype'),
-  url("/sites/members.meta.org.au/themes/openhub/fonts/frutiger_roman/frutiger_roman.woff") format('woff'),
-  url("/sites/members.meta.org.au/themes/openhub/fonts/frutiger_roman/frutiger_roman.ttf") format('truetype');
+  src: url("profiles/collabco/themes/openhub/fonts/frutiger_roman/frutiger_roman.eot");
+  src: url("profiles/collabco/themes/openhub/fonts/frutiger_roman/frutiger_roman.eot?#iefix") format('embedded-opentype'),
+  url("profiles/collabco/themes/openhub/fonts/frutiger_roman/frutiger_roman.woff") format('woff'),
+  url("profiles/collabco/themes/openhub/fonts/frutiger_roman/frutiger_roman.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -151,7 +151,7 @@ h5 {
 .not-logged-in.page-user-register #content #content-head,
 .not-logged-in.page-user #content #content-head,
 .not-logged-in.page-user-password #content #content-head {
-  background-image: url('/sites/members.meta.org.au/themes/openhub/meta-logo.png');
+  background-image: url('/profiles/collabco/themes/openhub/meta-logo.png');
 }
 .not-logged-in #content #content-head #page-title {
   color: #6a6767;
