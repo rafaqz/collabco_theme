@@ -405,6 +405,8 @@ p {
 
 #first-time {
   color: #fff;
+  height:0px;
+  overflow:hidden;
 }
 
 #first-time a {
