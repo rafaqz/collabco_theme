@@ -755,4 +755,11 @@ height: 62px;
   background: none !important;
 }
 
+/** 13. IE8 Fixes 
+---------------------------------------------
+ */
+.ie8 .sidebar #block-search-form.contextual-links-region {
+  position: inherit;
+}
+
 
