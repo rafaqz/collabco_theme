@@ -97,9 +97,6 @@
           <?php if ($page['content_upper']): ?>
           <div id="content-upper" class="row-fluid content-upper"> <?php print render($page['content_upper']); ?> </div>
           <?php endif; ?>
-          <?php if (($page['content']) || ($feed_icons)): ?>
-          <div id="content-body" class="row-fluid content-body"> <?php print render($page['content']); ?> <?php print $feed_icons; ?> </div>
-          <?php endif; ?>
           <?php if ($page['content_row2']): ?>
           <div id="content-row2" class="row-fluid content-row2"> <?php print render($page['content_row2']); ?> </div>
           <?php endif; ?>
