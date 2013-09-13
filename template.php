@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Impliments hook_field_widget_form_alter().
+ */
 function collabco_theme_field_widget_form_alter(&$element, &$form_state, $context) {
   if (!empty($element['#field_name'])) {
     switch ($element['#field_name']) {
@@ -13,8 +16,12 @@ function collabco_theme_field_widget_form_alter(&$element, &$form_state, $contex
         break;
     }
   }
+  dpm($element);
 }
 
+/**
+ * Impliments hook_form_alter().
+ */
 function collabco_theme_form_alter(&$form, &$form_state, $form_id) {
 
 }
