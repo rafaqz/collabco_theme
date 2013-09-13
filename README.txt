@@ -28,3 +28,4 @@ More detailed information on installing themes here: http://drupal.org/getting-s
 -- TROUBLESHOOTING --
 
 Connect with the Open Framework maintainers at http://openframework.stanford.edu.
+
