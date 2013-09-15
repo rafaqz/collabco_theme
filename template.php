@@ -16,7 +16,6 @@ function collabco_theme_field_widget_form_alter(&$element, &$form_state, $contex
         break;
     }
   }
-  dpm($element);
 }
 
 /**
