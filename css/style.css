@@ -766,20 +766,20 @@ height: 62px;
   position: inherit;
 }
 
+
 /** 14. Knowledge Object styling 
 ---------------------------------------------
  */
-
 
 form div.entityconnect-add, 
 form div.entityconnect-edit {
   width: auto;
 }
 
-form div.entityconnect-add input, 
-form div.entityconnect-edit input {
+form div.entityconnect-add input {
   height: 2.5em;
   width: auto;
+  float: left;
   border: 1px solid #d5d5d5;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -798,4 +798,5 @@ form div.entityconnect-edit input {
 .field-type-entityreference .form-type-textfield input[type=text] {
   width: 50%;
 }
+
 
