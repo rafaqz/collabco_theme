@@ -82,6 +82,10 @@ body {
   padding: 0;
 }
 
+.paddingreset .item-list ul li {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 
 /**
@@ -345,7 +349,7 @@ p {
 
 
 /**
-6. JOIN THE CONVERSATION BLOCK & conversation PAGES
+6. CONVERSATION FEATURE 
 ---------------------------------------------
  */
 
@@ -585,7 +589,7 @@ height: 62px;
 }
 
 
-/** 10. MEMBER ORGANISATION PROFILES 
+/** 10. ORGANISATION FEATURE
 ---------------------------------------------
  */
 
@@ -618,6 +622,16 @@ height: 62px;
 .field-collection-view {
   margin-bottom: 20px;
 }
+
+/**
+13. PARTNERS
+---------------------------------------------
+ */
+
+.page-node #main-content #content-body {
+  margin-bottom: 10px;
+}
+
 #quicktabs-services .ui-widget-header {
   padding: 0px;
 }
@@ -674,13 +688,6 @@ height: 62px;
 }
 
 
-/**
-13. PARTNERS
----------------------------------------------
- */
-.page-node #main-content #content-body {
-  margin-bottom: 10px;
-}
 
 /**
 14. RECENT ACTIVITY BLOCK
@@ -723,7 +730,6 @@ height: 62px;
   padding: 4%;
   margin-bottom:5px;
 }
-
 .bubble_border p {
   margin:0px;
 }
@@ -768,19 +774,20 @@ height: 62px;
 }
 
 
-/** 14. Knowledge Object styling 
+
+/** 14. Knowledge Feature 
 ---------------------------------------------
  */
 
-form div.entityconnect-add, 
-form div.entityconnect-edit {
-  width: auto;
+form .field-name-field-ko-ref div.entityconnect-add {
+  height: 2.5em;
+  float: left;
+  padding: 5px 0;
 }
 
-form div.entityconnect-add input {
+form .field-name-field-ko-ref div.entityconnect-add input {
   height: 2.5em;
-  width: auto;
-  float: left;
+  width: 100%;
   border: 1px solid #d5d5d5;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -796,8 +803,32 @@ form div.entityconnect-add input {
   text-indent: 0;
 }
 
-.field-type-entityreference .form-type-textfield input[type=text] {
-  width: 50%;
+form .field-name-field-ko-ref select,
+form .field-name-field-ko-ref div {
+  clear: both;
+  width: 100%;
+  margin: auto;
 }
 
+form .field-name-field-ko-ref span {
+  display: block;
+  text-align: center;
+}
+
+form .field-name-field-ko-file .tabledrag-toggle-weight-wrapper {
+  display: none;
+}
+
+.field-type-entityreference .form-type-textfield input[type=text] {
+  width: 100%;
+}
+
+
+/** 14. Group Feature 
+---------------------------------------------
+ */
+
+.field-name-og-group-ref .option {
+  font-weight: normal;
+}
 
