@@ -25,62 +25,15 @@ GLOBAL Stylesheet - Please DO NOT add theme-specific fonts sizes, images and bac
 
 
 /**
-1. BODY & BACKGROUND
+1. BODY
 ---------------------------------------------
  */
-
-.block-iin-navigation-block .content,
-.block-iin-profile-block .content,
-.paddingreset .content {
-  padding: 0;
-}
-
-.paddingreset .item-list ul li {
-  margin-left: 0;
-  margin-right: 0;
-}
 
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 20px;
-}
-.divider {
-  height: 2px;
-  margin-top: -10px;
-  margin-bottom: 10px;
-}
-.views-row {
-  clear: both;
-  margin-bottom: 1em;
-  padding-bottom: 10px;
-}
-.twocolgrid {
-  float: left;
-  width: 40%;
-  height: 120px;
-  padding-bottom: 5px;
-  margin-right: 25px;
-  margin-bottom: 30px;
-  vertical-align: baseline;
-  margin-left: 10px;
-}
-
-.paddingL10 {
-	padding-left:10px;
-}
-
-.paddingL5 {
-	padding-left:5px;
-}
-
-.marginL10 {
-	margin-left:10px;
-}
-
-.marginL5 {
-	margin-left:5px;
 }
 
 #content-wrapper {
@@ -104,6 +57,29 @@ body {
   padding-top:10px;
 }
 
+.main .block {
+  margin-bottom: 10px;
+}
+
+.contentarticle {
+  margin:0 10px;
+}
+
+/*Views*/
+.views-row {
+  clear: both;
+  margin-bottom: 1em;
+  padding-bottom: 10px;
+}
+
+.view-header {
+  padding:0 0 0 2%;
+}
+
+.view .item-list ul li {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 
 /**
@@ -161,17 +137,10 @@ body, p {
   font-size: 0.75em;
   line-height: 1.5;
 }
-
-/**
-3.  LOGO, ICONS
----------------------------------------------
- **/
-.iin-feature {
-margin: 0px;
-font-size: 1em;
-font-weight: normal;
-margin-bottom: 15px;
+#page-title {
+  line-height: 1;
 }
+
 
 /**
 4. THREADED COMMENTS
@@ -189,7 +158,6 @@ margin-bottom: 15px;
 #comments {
     margin:2% !important;
 }
-
 
 .comment-bubble {
   position: relative;
@@ -356,9 +324,117 @@ ul .links {
   padding-top: 5px;
 }
 
+/** IE8 Fixes 
+---------------------------------------------
+ */
+.ie8 .sidebar #block-search-form.contextual-links-region {
+  position: inherit;
+}
 
-/**
-14. LOGIN PAGE
+
+/** FORMS
+---------------------------------------------
+ */
+
+.password-parent {
+  width: 460px;
+}
+.password-strength {
+  width: 200px;
+}
+input[type="file"] {
+  line-height: normal !important;
+}
+.page-user-edit .form-type-password {
+  width: 32em;
+}
+.page-user-edit #edit-account .password-strength {
+  width: 13em;
+}
+
+/** 
+7. NAVIGATION BLOCK
+---------------------------------------------
+ **/
+
+.sidetheme_nav {
+  border: thin solid #dfdfdf;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  background-color: #fff;
+  padding: 0px !important;
+}
+
+.iin-nav ul.nav li:hover {
+  background-color: #f2f2f2;
+}
+
+.iin-nav ul.nav {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+.iin-nav ul.nav li {
+  font-size: 1.2em;
+  padding-bottom: 10px;
+  border-top-style: dotted;
+  border-width: 1px;
+  background-repeat: no-repeat;
+  background-position: .4em .5em;
+  border-color: #dadad9;
+  padding-top:11px !important;
+  padding-left: 2.2em;
+}
+
+.iin-nav ul.about {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+.iin-nav ul.about li {
+  background-repeat: no-repeat;
+  background-position: 0 1em;
+  padding-left: 2.6em;
+  border-style: none;
+}
+
+
+/** SIDEBAR BLOCKS
+---------------------------------------------
+ **/
+
+.sidetheme {
+  border: thin solid #dfdfdf;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  background-color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.sidetheme h2 {
+  background-color: #ed6a26;
+  color: #fff;
+  margin: 0 -10px 10px -10px;
+  line-height: 38px;
+  padding-left: 10px;
+}
+
+
+#block-views-slideshow-block .content {
+  padding: 0px;
+}
+
+.iin-slideshow .views-field-nothing {
+  padding: 0 10px;
+  height: 80px;
+}
+
+
+/** LOGIN PAGE
 ---------------------------------------------
  */
 .not-logged-in.page-user-register .container,
@@ -422,18 +498,15 @@ ul .links {
   background-position: left top;
   padding-top: 100px;
 }
-
 .not-logged-in .tabs {
   clear: both;
   margin-top: 170px;
 }
 
 
-/**
-6. JOIN THE CONVERSATION BLOCK & conversation PAGES
+/** CONVERSATION FEATURE
 ---------------------------------------------
  */
-
 .page-conversations #block-system-main {
   padding-top: 0px;
 }
@@ -473,11 +546,9 @@ ul .links {
   vertical-align: middle;
   line-height: 2.2;
 }
-
 .conversation-summary {
 
 }
-
 .conversation-summary h2 {
   text-align: center;
   width: 85%;
@@ -486,7 +557,6 @@ ul .links {
   margin-top: 10px;
   padding-bottom: 5px;
 }
-
 .iin-join-conversation-block h2 {
   text-align: center;
   width: 85%;
@@ -496,23 +566,6 @@ ul .links {
   padding-bottom: 5px;
   border-bottom: #cccccc thin solid;
 }
-
-#first-time {
-  color: #fff;
-  height:0px;
-  overflow:hidden;
-}
-
-#first-time a {
-  color:#ffffff;
-  text-decoration: none;
-}
-/*.cicon {
-background-image: url(../images/conversationtitleicon.png); max-width: 100%;  
-background-repeat: no-repeat;
-background-position: 0px -4px;
-height: 62px;	
-}*/
 .conversationpreview {
   margin-left: -15px;
   padding: 10px 20px;
@@ -548,153 +601,45 @@ height: 62px;
   margin-top: 2% !important;  
   line-height: 1.2em;
 }
-
 .conversationcomment {
   margin-top:10px;
   margin-left: 0px !important;
 }
-
 .excerpt-author {
   font-weight: bold;
 }
-
 .commentname {
   font-size: 0.8em;
   line-height: 1.5em;
 }
-
 .commentquote {
   font-size: 0.9em;
   line-height: 1.2em;
   margin-top: 2%;
   float:left !important;
 }
-
 .comment-img {
   margin-left: 1% !important;
 }
-
 .more-link {
   margin-left:10px;
 }
-
 .field-name-comment-body {
   padding: 10px !important; 
 }
-
 .view-join-the-conversation .view-content .item-list ul li {
 margin: 0 0 0 1.9em;
 }
 
-/** 
-7. NAVIGATION 
----------------------------------------------
- **/
 
 
-.sidetheme_nav {
-  border: thin solid #dfdfdf;
-  margin-bottom: 10px;
-  box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  -moz-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  -webkit-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  background-color: #fff;
-  padding: 0px !important;
-}
-
-
-.iin-nav ul.nav li:hover {
-  background-color: #f2f2f2;
-}
-
-.iin-nav ul.nav {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-}
-.iin-nav ul.nav li {
-  font-size: 1.2em;
-  padding-bottom: 10px;
-  border-top-style: dotted;
-  border-width: 1px;
-  background-repeat: no-repeat;
-  background-position: .4em .5em;
-  border-color: #dadad9;
-  padding-top:11px !important;
-  padding-left: 2.2em;
-}
-
-.iin-nav ul.about {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-}
-.iin-nav ul.about li {
-  background-repeat: no-repeat;
-  background-position: 0 1em;
-  padding-left: 2.6em;
-  border-style: none;
-}
-
-
-
-/**
-8. WELCOME PAGE
----------------------------------------------
- **/
-
-.main .block {
-  margin-bottom: 10px;
-}
-
-.view-header {
-  padding:0 0 0 2%;
-}
-
-.sidetheme {
-  border: thin solid #dfdfdf;
-  margin-bottom: 10px;
-  box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  -moz-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  -webkit-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  background-color: #fff;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.sidetheme h2 {
-  background-color: #ed6a26;
-  color: #fff;
-  margin: 0 -10px 10px -10px;
-  line-height: 38px;
-  padding-left: 10px;
-}
-
-.contentarticle {
-  margin:0 10px;
-}
-
-#block-views-slideshow-block .content {
-  padding: 0px;
-}
-
-#block-block-8 .content {
-  padding: 0px;
-  margin-top: -8px;
-}
-.iin-slideshow .views-field-nothing {
-  padding: 0 10px;
-  height: 80px;
-}
-
-#page-title {
-  line-height: 1;
-}
-
-
-/** 9. PROFILES 
+/** PROFILE FEATURE
 ---------------------------------------------
  */
+
+.iin-user-profile #user-picture  {
+margin-bottom: 10px;
+}
 
 .iin-profile-block {
   background-color: #fff;
@@ -791,9 +736,21 @@ margin: 0 0 0 1.9em;
   margin-bottom:10px;
 }
 
-/** 10. MEMBER ORGANISATION PROFILES 
+/** ORGANISATION FEATURE
 ---------------------------------------------
  */
+
+/*Ugly two column hack for organisation members pages- please fix this.*/
+.twocolgrid {
+  float: left;
+  width: 40%;
+  height: 120px;
+  padding-bottom: 5px;
+  margin-right: 25px;
+  margin-bottom: 30px;
+  vertical-align: baseline;
+  margin-left: 10px;
+}
 
 .orgbox {
   border-bottom: 1px solid #f2f2f2;
@@ -855,6 +812,15 @@ height:30px;
 .field-collection-view {
   margin-bottom: 20px;
 }
+
+.page-node #main-content #content-body {
+  margin-bottom: 10px;
+}
+
+/** SERVICES FREATURE
+---------------------------------------------
+ */
+
 #quicktabs-services .ui-widget-header {
   padding: 0px;
 }
@@ -884,44 +850,8 @@ height:30px;
 }
 
 
-/** 11. FEATURED CONTENT BLOCK 
----------------------------------------------
- */
 
-.iin-feature {
-  background-color: #fff;
-  border: thin solid #dfdfdf;
-  box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  -moz-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  -webkit-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
-  background-color: #fff;
-}
-.iin-feature h2 {
-  margin: 0px;
-  font-size: 1.3em;
-  padding: 5px 10px;
-  font-weight: normal;
-  margin-bottom: 15px;
-}
-.iin-feature .view-organizations ul {
-  list-style-type: none;
-}
-#block-block-11 .content {
-  padding: 0px !important;
-  background: #f2f2f2 !important;  
-}
-
-
-/**
-13. PARTNERS
----------------------------------------------
- */
-.page-node #main-content #content-body {
-  margin-bottom: 10px;
-}
-
-/**
-14. RECENT ACTIVITY BLOCK
+/** MESSAGE FEATURE - (RECENT ACTIVITY BLOCK)
 ---------------------------------------------
  */
 .view-recent-activity .activity-details {
@@ -948,9 +878,6 @@ height:30px;
 .commentbubble p {
   margin-right: 8px;
 }
-.top20 {
-  margin-top: 20px;
-}
 .commentbubble {
   background: url(../images/bubbletop.png) no-repeat top !important;
 }
@@ -968,8 +895,7 @@ height:30px;
 }
 
 
-/**
-15. SEARCH BAR HACK
+/** SEARCH FEATURE - SEARCH BAR HACK
 ---------------------------------------------
  */
 
@@ -999,58 +925,21 @@ height:30px;
   background: none !important;
 }
 
-/** 13. IE8 Fixes 
----------------------------------------------
- */
-.ie8 .sidebar #block-search-form.contextual-links-region {
-  position: inherit;
-}
-
-
-/** 14. FORMS
+/** GROUP FEATURE
 ---------------------------------------------
  */
 
-.password-parent {
-width: 460px;
-}
-
-.password-strength {
-width: 200px;
-}
-
-input[type="file"] {
-line-height: normal !important;
-}
-
- .page-user-edit .form-type-password {
-  width: 32em;
- }
-.page-user-edit #edit-account .password-strength {
-  width: 13em;
-}
-
-
-
-/** 15. USER PROFILE 
----------------------------------------------
- */
-
-.iin-user-profile #user-picture  {
-margin-bottom: 10px;
-}
-
-
-/** 16. GROUP MEMBERS BLOCK
- */
-
- .group-members .content .view .view-content .custom-grid ul li {
+.group-members .content .view .view-content .custom-grid ul li {
   height:100% !important;
   margin-bottom: 10px !important;
- }
+}
+
+.field-name-og-group-ref .option {
+  font-weight: normal;
+}
 
 
-/** 14. Knowledge Feature 
+/** KNOWLEDGE FEATURE 
 ---------------------------------------------
  */
 
@@ -1096,14 +985,5 @@ form .field-name-field-ko-file .tabledrag-toggle-weight-wrapper {
 
 .field-type-entityreference .form-type-textfield input[type=text] {
   width: 100%;
-}
-
-
-/** 14. Group Feature 
----------------------------------------------
- */
-
-.field-name-og-group-ref .option {
-  font-weight: normal;
 }
 
