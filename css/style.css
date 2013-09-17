@@ -76,16 +76,36 @@ body {
 	margin-left:5px;
 }
 
-.block-iin-navigation-block .content,
-.block-iin-profile-block .content,
-.paddingreset .content {
-  padding: 0;
+#content-wrapper {
+  border: thin solid #dfdfdf;
+  padding:0px;
+  padding:2%;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  background-color: #fff;
 }
 
-.paddingreset .item-list ul li {
-  margin-left: 0;
-  margin-right: 0;
+.content {
+  padding: 0px !important;
 }
+
+.content-head {
+  text-align:center;
+  border-bottom:1px solid #f2f2f2;
+  margin:0px !important;
+}
+
+#main-content {
+  padding-top:10px;
+}
+
+
+#content-body {
+  padding:10px;
+}
+
 
 
 /**
@@ -125,7 +145,7 @@ h5 {
   font-size: 0.9em;
   line-height: 1.0;
 }
-p {
+body, p {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 0.875em;
@@ -148,12 +168,30 @@ p {
 3.  LOGO, ICONS
 ---------------------------------------------
  **/
-
+.iin-feature {
+margin: 0px;
+font-size: 1em;
+font-weight: normal;
+margin-bottom: 15px;
+}
 
 /**
 4. THREADED COMMENTS
 ---------------------------------------------
  */
+#comments .comment .field-name-comment-body .comments {
+  font-family: Helvetica, Arial, sans-serif;
+  margin:2% !important;
+}
+
+.comment {
+    margin:2% !important;
+}
+
+#comments {
+    margin:2% !important;
+}
+
 
 .comment-bubble {
   position: relative;
@@ -192,7 +230,6 @@ p {
   padding: 10px 10px 10px 10px;
   width: 85%;
   margin-top: 10px;
-  margin-bottom:5px;
 }
 .commentquote {
   margin-left: -5px;
@@ -204,17 +241,58 @@ p {
 .comment span.new {
   display: none;
 }
+
 #comments .user-picture {
   float: left;
   width: 55px;
   height: 55px;
   padding: 10px 0 0 10px;
 }
+
+.activity-details p {
+  font-size: 0.9em;
+}
+
+.user-picture {
+  margin:0 5px 0 5px;
+}
+
+.links {
+  padding:0px  !important;
+  float: right;
+  font-size: 0.8em;
+  line-height:0.8em;
+}
+
+ul .links {
+  line-height:0.8em;
+}
+
+.links li {
+  line-height:10px !important;
+}
+
+.haveyoursay {
+  position: relative;
+  display: inline;
+  float: right;
+  border: thin solid #dfdfdf;
+  margin-top: 10px;
+  box-shadow: 1px 2px 8px 0px rgba(150, 150, 150, 0.75);
+  -moz-box-shadow: 1px 2px 8px 0px rgba(150, 150, 150, 0.75);
+  -webkit-box-shadow: 1px 2px 8px 0px rgba(150, 150, 150, 0.75);
+  font-size: 0.9em;
+  padding: 1% 2% 1% 2%;
+  margin-right: -1%;
+  text-align: center;
+}
+
 #comments .comment {
   background: #F3F3F3;
   margin: 0 0px 15px 0px;
   padding: 12px;
 }
+
 #comments .comment .field-name-comment-body {
   font-weight: normal;
   font-size: 12px;
@@ -294,7 +372,7 @@ p {
 .not-logged-in.page-user-register #content #content-head,
 .not-logged-in.page-user #content #content-head,
 .not-logged-in.page-user-password #content #content-head {
-  margin-top: 10px;
+  margin: 0px;
   background-repeat: no-repeat;
   background-position: center top;
   padding-top: 100px;
@@ -347,9 +425,14 @@ p {
   padding-top: 100px;
 }
 
+.not-logged-in .tabs {
+  clear: both;
+  margin-top: 170px;
+}
+
 
 /**
-6. CONVERSATION FEATURE 
+6. JOIN THE CONVERSATION BLOCK & conversation PAGES
 ---------------------------------------------
  */
 
@@ -413,6 +496,7 @@ p {
   margin-bottom: 10px;
   margin-top: 10px;
   padding-bottom: 5px;
+  border-bottom: #cccccc thin solid;
 }
 
 #first-time {
@@ -436,6 +520,7 @@ height: 62px;
   padding: 10px 20px;
   width: 92%;
   background-color: #f3f3f3;
+  margin-bottom: 15px;
 }
 .node-type-conversation .submitted .submitted-content-posted {
   font-style: italic;
@@ -457,25 +542,90 @@ height: 62px;
   margin-bottom: 20px;
 }
 
+.conversation-item {
+  margin-bottom:2% !important;
+}
+
+.conversation-excerpt {
+  margin-top: 2% !important;  
+  line-height: 1.2em;
+}
+
+.conversationcomment {
+  margin-top:10px;
+  margin-left: 0px !important;
+}
+
+.excerpt-author {
+  font-weight: bold;
+}
+
+.commentname {
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+.commentquote {
+  font-size: 0.9em;
+  line-height: 1.2em;
+  margin-top: 2%;
+  float:left !important;
+}
+
+.comment-img {
+  margin-left: 1% !important;
+}
+
+.more-link {
+  margin-left:10px;
+}
+
+.field-name-comment-body {
+  padding: 10px !important; 
+}
+
+.view-join-the-conversation .view-content .item-list ul li {
+margin: 0 0 0 1.9em;
+}
+
 /** 
 7. NAVIGATION 
 ---------------------------------------------
  **/
+
+
+.sidetheme_nav {
+  border: thin solid #dfdfdf;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  background-color: #fff;
+  padding: 0px !important;
+}
+
+
+.iin-nav ul.nav li:hover {
+  background-color: #f2f2f2;
+}
+
 .iin-nav ul.nav {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
 }
 .iin-nav ul.nav li {
-  background-repeat: no-repeat;
-  background-position: 0 .4em;
-  padding-left: 2.6em;
   font-size: 1.2em;
-  padding-top: 10px;
   padding-bottom: 10px;
   border-top-style: dotted;
   border-width: 1px;
+  background-repeat: no-repeat;
+  background-position: .4em .5em;
+  border-color: #dadad9;
+  padding-top:11px !important;
+  padding-left: 2.2em;
 }
+
 .iin-nav ul.about {
   list-style-type: none;
   padding: 0px;
@@ -488,6 +638,8 @@ height: 62px;
   border-style: none;
 }
 
+
+
 /**
 8. WELCOME PAGE
 ---------------------------------------------
@@ -495,6 +647,33 @@ height: 62px;
 
 .main .block {
   margin-bottom: 10px;
+}
+
+.view-header {
+  padding:0 0 0 2%;
+}
+
+.sidetheme {
+  border: thin solid #dfdfdf;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
+  background-color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sidetheme h2 {
+  background-color: #ed6a26;
+  color: #fff;
+  margin: 0 -10px 10px -10px;
+  line-height: 38px;
+  padding-left: 10px;
+}
+
+.contentarticle {
+  margin:0 10px;
 }
 
 #block-views-slideshow-block .content {
@@ -528,12 +707,33 @@ height: 62px;
   -webkit-box-shadow: 0px 0px 10px 1px rgba(223, 223, 223, 0.75);
 }
 
+.block-iin-profile-block h6 {
+  display:block;
+  padding:2%;
+}
+
 #iin-profile-title {
   font-size: 1.3em;
   font-weight: normal;
-  margin: -10px -10px 15px;
+  line-height:30px;
+  margin: -10px 0 10px 0 !important;
   padding: 5px 10px;
 }
+
+.block-iin-profile-block a {
+  padding:2%;
+}
+
+.block-iin-profile-block img {
+  height: 70px;
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+#iin-profile-links ul {
+  margin-left:0px;
+}
+
 #iin-profile-welcome {
   display: inline;
   font-style: italic;
@@ -588,10 +788,45 @@ height: 62px;
   padding-top: 15px;
 }
 
+#iin-profile-content {
+  margin-left:-10px;
+  margin-bottom:10px;
+}
 
-/** 10. ORGANISATION FEATURE
+/** 10. MEMBER ORGANISATION PROFILES 
 ---------------------------------------------
  */
+
+.orgbox {
+  border-bottom: 1px solid #f2f2f2;
+  text-align:center;
+  margin: 5% 0 0 4% !important;
+}
+
+.orgimg {
+  position: relative;
+  display:block;
+  margin:0 auto;
+  height:50px;
+}
+
+.orgimg img {
+  max-height:50px;
+  width:auto;
+}
+
+.orgtext {
+  position: relative;
+  clear:left;
+  display:inline;
+  margin:10px auto;
+}
+
+.view-member-organisations ul {
+margin-bottom: 15px;
+clear: both;
+height:30px;
+}
 
 .view-member-organisations .views-row {
   clear: both;
@@ -622,16 +857,6 @@ height: 62px;
 .field-collection-view {
   margin-bottom: 20px;
 }
-
-/**
-13. PARTNERS
----------------------------------------------
- */
-
-.page-node #main-content #content-body {
-  margin-bottom: 10px;
-}
-
 #quicktabs-services .ui-widget-header {
   padding: 0px;
 }
@@ -685,9 +910,17 @@ height: 62px;
 }
 #block-block-11 .content {
   padding: 0px !important;
+  background: #f2f2f2 !important;  
 }
 
 
+/**
+13. PARTNERS
+---------------------------------------------
+ */
+.page-node #main-content #content-body {
+  margin-bottom: 10px;
+}
 
 /**
 14. RECENT ACTIVITY BLOCK
@@ -730,8 +963,10 @@ height: 62px;
   padding: 4%;
   margin-bottom:5px;
 }
+
 .bubble_border p {
   margin:0px;
+  font-size: 0.85em;
 }
 
 
@@ -774,61 +1009,45 @@ height: 62px;
 }
 
 
-
-/** 14. Knowledge Feature 
+/** 14. FORMS
 ---------------------------------------------
  */
 
-form .field-name-field-ko-ref div.entityconnect-add {
-  height: 2.5em;
-  float: left;
-  padding: 5px 0;
+.password-parent {
+width: 460px;
 }
 
-form .field-name-field-ko-ref div.entityconnect-add input {
-  height: 2.5em;
-  width: 100%;
-  border: 1px solid #d5d5d5;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  background-image: -webkit-linear-gradient(top,#fff 0%,#e6e6e6 100%);
-  background-image: -ms-linear-gradient(top,#fff 0%,#e6e6e6 100%);
-  background-image: -moz-linear-gradient(top,#fff 0%,#e6e6e6 100%);
-  background-image: -o-linear-gradient(top,#fff 0%,#e6e6e6 100%);
-  background-image: webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(1,#e6e6e6));
-  background-image: linear-gradient(to bottom,#fff 0%,#e6e6e6 100%) !important;
-  margin: 0;
-  padding: 0;
-  text-indent: 0;
+.password-strength {
+width: 200px;
 }
 
-form .field-name-field-ko-ref select,
-form .field-name-field-ko-ref div {
-  clear: both;
-  width: 100%;
-  margin: auto;
+input[type="file"] {
+line-height: normal !important;
 }
 
-form .field-name-field-ko-ref span {
-  display: block;
-  text-align: center;
-}
-
-form .field-name-field-ko-file .tabledrag-toggle-weight-wrapper {
-  display: none;
-}
-
-.field-type-entityreference .form-type-textfield input[type=text] {
-  width: 100%;
+ .page-user-edit .form-type-password {
+  width: 32em;
+ }
+.page-user-edit #edit-account .password-strength {
+  width: 13em;
 }
 
 
-/** 14. Group Feature 
+
+/** 15. USER PROFILE 
 ---------------------------------------------
  */
 
-.field-name-og-group-ref .option {
-  font-weight: normal;
+.iin-user-profile #user-picture  {
+margin-bottom: 10px;
 }
+
+
+/** 16. GROUP MEMBERS BLOCK
+ */
+
+ .group-members .content .view .view-content .custom-grid ul li {
+  height:100% !important;
+  margin-bottom: 10px !important;
+ }
 
