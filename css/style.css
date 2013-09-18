@@ -359,6 +359,9 @@ input[type="file"] {
   width: 95%;
 }
 
+#edit-mimemail {
+  display: none;
+}
 
 /** NAVIGATION BLOCK
 ---------------------------------------------
