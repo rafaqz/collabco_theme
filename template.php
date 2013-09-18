@@ -14,7 +14,7 @@ function collabco_theme_field_widget_form_alter(&$element, &$form_state, $contex
         $element['#file_upload_description'] = '';
         break;
       case 'field_ko_ref':
-        $help = t('Or select a file you have allready uploaded elsewhere');
+        $help = t('Or select a file you have already uploaded elsewhere');
         $element['#field_prefix'] = $help;
         break;
     }
