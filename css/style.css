@@ -355,6 +355,9 @@ input[type="file"] {
 .page-user-edit #edit-account .password-strength {
   width: 13em;
 }
+.form-text {
+  width: 95%;
+}
 
 
 /** NAVIGATION BLOCK
