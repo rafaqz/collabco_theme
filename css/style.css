@@ -983,7 +983,7 @@ form .field-name-field-ko-file .tabledrag-toggle-weight-wrapper {
 .view-recent-files .views-row {
   padding-bottom: 10px;
 }
-.field-name-field-ko-ref {
+form .field-name-field-ko-ref {
   margin-top: 30px;
   padding-top: 20px;
   border-top: 1px solid #ccc;
