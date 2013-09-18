@@ -358,9 +358,11 @@ input[type="file"] {
 .form-text {
   width: 95%;
 }
-
 #edit-mimemail {
   display: none;
+}
+.filter-wrapper {
+  padding: 5px;
 }
 
 /** NAVIGATION BLOCK
@@ -429,8 +431,9 @@ input[type="file"] {
   background-color: #ed6a26;
   color: #fff;
   margin: 0 -10px 10px -10px;
-  line-height: 38px;
+  line-height: 30px;
   padding-left: 10px;
+  padding-top: 5px;
 }
 
 
@@ -658,7 +661,7 @@ margin: 0 0 0 1.9em;
   font-weight: normal;
   line-height:30px;
   margin: -10px 0 10px 0 !important;
-  padding: 5px 10px;
+  padding: 5px 10px 0;
 }
 
 .block-iin-profile-block a {
@@ -961,25 +964,29 @@ form .field-name-field-ko-ref div.entityconnect-add input {
   padding: 0;
   text-indent: 0;
 }
-
 form .field-name-field-ko-ref select,
 form .field-name-field-ko-ref div {
   clear: both;
   width: 100%;
   margin: auto;
 }
-
 form .field-name-field-ko-ref span {
   display: block;
   text-align: center;
 }
-
 form .field-name-field-ko-file .tabledrag-toggle-weight-wrapper {
   display: none;
 }
-
 .field-type-entityreference .form-type-textfield input[type=text] {
   width: 100%;
+}
+.view-recent-files .views-row {
+  padding-bottom: 10px;
+}
+.field-name-field-ko-ref {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
 }
 
 /** SLIDESHOW FEATURE
