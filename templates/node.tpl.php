@@ -80,7 +80,7 @@
 ?>
 <?php if (!$is_front): ?>
   <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-  <div class="nodewrapper"> <div class="userpicture"> <?php print $user_picture; ?></div>
+  <div class="nodewrapper"> 
 
   <div class="templatedtitlestyle">  <?php print render($title_prefix); ?>
     <?php if (!$page): ?>
@@ -89,10 +89,11 @@
     <?php print render($title_suffix); ?></div>
 
     <?php if ($display_submitted): ?>
+      <?php print $user_picture; ?>
       <div class="submitted">
         <div class="submitted-content-posted">
-    <?php print 'Posted ' . $date; ?><br />
-    <?php print ' by ' . $name; ?>
+          <?php print 'Posted by ' . $name; ?><br>
+          <?php print $date; ?>
       </div>
     <?php endif; ?></div><div class="clearfix"></div>
 
